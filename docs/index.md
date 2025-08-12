@@ -1,3 +1,8 @@
+---
+layout: default
+title: ホーム
+---
+
 # スーパーマーケットシミュレーターから学ぶ経営学入門
 
 ゲームで学ぶビジネスの基本
@@ -8,8 +13,24 @@
 
 ## 目次
 
+### はじめに
 - [はじめに](introduction/)
-- [第1章](chapters/chapter01/)
+
+### 本編
+- [第1章: お店を開こう！ - 小売業の基本](chapters/chapter01)
+- [第2章: データで判断しよう - 経営分析入門](chapters/chapter02)
+- [第3章: 在庫の科学 - 需要予測と発注管理](chapters/chapter03)
+- [第4章: 売り場の心理学 - 顧客行動と店舗設計](chapters/chapter04)
+- [第5章: お客様は神様？ - 顧客満足とクレーム対応](chapters/chapter05)
+- [第6章: 働く人を大切に - 従業員管理とモチベーション](chapters/chapter06)
+- [第7章: お金の流れを理解する - キャッシュフロー経営](chapters/chapter07)
+- [第8章: 成長し続ける経営 - 事業拡大と多店舗展開](chapters/chapter08)
+- [第9章: 君も経営者になれる！ - ビジネスプラン作成](chapters/chapter09)
+
+### 付録
+- [付録A: 基本的な計算式集](appendices/appendix-a)
+- [付録B: 用語集](appendices/appendix-b)
+- [付録C: 参考文献・推薦図書](appendices/appendix-c)
 
 ---
 
@@ -17,7 +38,7 @@
 
 **太田和彦**
 
-- Email: [knowledge@itdo.jp](mailto:knowledge@itdo.jp)
+- Email: [ootakazuhiko@gmail.com](mailto:ootakazuhiko@gmail.com)
 
 ## ライセンス
 
