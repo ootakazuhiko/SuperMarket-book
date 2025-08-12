@@ -1,0 +1,57 @@
+# Jekyll configuration
+title: "スーパーマーケットシミュレーターから学ぶ経営学入門"
+description: "ゲームで学ぶビジネスの基本 - 中学生向け経営学入門書"
+author: "太田和彦"
+email: knowledge@itdo.jp
+url: "https://ootakazuhiko.github.io"
+baseurl: "/SuperMarket-book"
+repository:
+  github: https://github.com/ootakazuhiko/SuperMarket-book
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .git
+  - package.json
+  - package-lock.json
+  - README.md
+  - scripts/
+  - tests/
+  - src/
+
+# Collections
+collections:
+  chapters:
+    output: true
+    permalink: /chapters/:name/
+  appendices:
+    output: true
+    permalink: /appendices/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "chapters"
+    values:
+      layout: "chapter"
+  - scope:
+      path: ""
+      type: "appendices"
+    values:
+      layout: "appendix"
+  - scope:
+      path: ""
+    values:
+      layout: "default"

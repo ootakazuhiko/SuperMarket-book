@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <title>PDCAサイクル</title>
+  <desc>Plan-Do-Check-Actionの継続的改善サイクルを示した図</desc>
+  
+  <!-- Define styles -->
+  <defs>
+    <style>
+      .plan-section {
+        fill: #e3f2fd;
+        stroke: #1976d2;
+        stroke-width: 3;
+      }
+      .do-section {
+        fill: #e8f5e8;
+        stroke: #4caf50;
+        stroke-width: 3;
+      }
+      .check-section {
+        fill: #fff3e0;
+        stroke: #ff9800;
+        stroke-width: 3;
+      }
+      .action-section {
+        fill: #ffebee;
+        stroke: #f44336;
+        stroke-width: 3;
+      }
+      .arrow {
+        stroke: #333;
+        stroke-width: 4;
+        fill: none;
+        marker-end: url(#arrowhead-large);
+      }
+      .text-large {
+        font-family: Inter, 'Helvetica Neue', Arial, sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        text-anchor: middle;
+        fill: #333;
+      }
+      .text-main {
+        font-family: Inter, 'Helvetica Neue', Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        text-anchor: middle;
+        fill: #333;
+      }
+      .text-secondary {
+        font-family: Inter, 'Helvetica Neue', Arial, sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        text-anchor: middle;
+        fill: #666;
+      }
+      .title {
+        font-family: Inter, 'Helvetica Neue', Arial, sans-serif;
+        font-size: 28px;
+        font-weight: 700;
+        text-anchor: middle;
+        fill: #333;
+      }
+    </style>
+    
+    <!-- Arrow marker -->
+    <marker id="arrowhead-large" markerWidth="15" markerHeight="10" 
+            refX="15" refY="5" orient="auto">
+      <polygon points="0 0, 15 5, 0 10" fill="#333" />
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#fafafa" stroke="#e0e0e0"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" class="title">PDCAサイクル</text>
+  <text x="400" y="70" class="text-secondary" style="font-size: 16px;">継続的改善のプロセス</text>
+  
+  <!-- PDCA Sections -->
+  <!-- Plan -->
+  <path d="M 200 150 A 150 150 0 0 1 350 300 L 400 300 L 400 150 Z" class="plan-section"/>
+  <text x="300" y="200" class="text-large">P</text>
+  <text x="300" y="225" class="text-main">Plan</text>
+  <text x="300" y="245" class="text-secondary">計画</text>
+  <text x="300" y="265" class="text-secondary">目標設定</text>
+  <text x="300" y="280" class="text-secondary">方法決定</text>
+  
+  <!-- Do -->
+  <path d="M 400 150 L 400 300 A 150 150 0 0 1 600 150 Z" class="do-section"/>
+  <text x="500" y="200" class="text-large">D</text>
+  <text x="500" y="225" class="text-main">Do</text>
+  <text x="500" y="245" class="text-secondary">実行</text>
+  <text x="500" y="265" class="text-secondary">計画実施</text>
+  <text x="500" y="280" class="text-secondary">データ収集</text>
+  
+  <!-- Check -->
+  <path d="M 600 150 A 150 150 0 0 1 450 300 L 400 300 L 400 450 Z" class="check-section"/>
+  <text x="500" y="350" class="text-large">C</text>
+  <text x="500" y="375" class="text-main">Check</text>
+  <text x="500" y="395" class="text-secondary">評価</text>
+  <text x="500" y="415" class="text-secondary">結果分析</text>
+  <text x="500" y="430" class="text-secondary">効果測定</text>
+  
+  <!-- Action -->
+  <path d="M 400 450 L 400 300 A 150 150 0 0 1 200 450 Z" class="action-section"/>
+  <text x="300" y="350" class="text-large">A</text>
+  <text x="300" y="375" class="text-main">Action</text>
+  <text x="300" y="395" class="text-secondary">改善</text>
+  <text x="300" y="415" class="text-secondary">標準化</text>
+  <text x="300" y="430" class="text-secondary">次回計画</text>
+  
+  <!-- Circular arrows -->
+  <path d="M 380 130 A 100 100 0 0 1 520 130" class="arrow"/>
+  <path d="M 620 170 A 100 100 0 0 1 620 310" class="arrow"/>
+  <path d="M 520 470 A 100 100 0 0 1 380 470" class="arrow"/>
+  <path d="M 180 310 A 100 100 0 0 1 180 170" class="arrow"/>
+  
+  <!-- Center text -->
+  <circle cx="400" cy="300" r="40" fill="white" stroke="#666" stroke-width="2"/>
+  <text x="400" y="295" class="text-main">継続的</text>
+  <text x="400" y="310" class="text-main">改善</text>
+  
+  <!-- Example text -->
+  <rect x="50" y="520" width="700" height="60" fill="white" stroke="#ccc" stroke-width="1" rx="8"/>
+  <text x="400" y="545" class="text-main">ゲーム例：レジ待ち時間の改善</text>
+  <text x="400" y="565" class="text-secondary">Plan: 待ち時間2分以内目標 → Do: レジ増設 → Check: 効果測定 → Action: 成功なら標準化、失敗なら別方法</text>
+  
+</svg>

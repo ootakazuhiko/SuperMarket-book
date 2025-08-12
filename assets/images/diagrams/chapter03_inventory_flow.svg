@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
+  <title>発注点管理システムのフロー</title>
+  <desc>在庫確認→発注点以下？→発注実行/発注しないの判断フローを示した図</desc>
+  
+  <!-- Define styles -->
+  <defs>
+    <style>
+      .process-rect {
+        fill: #e1f5fe;
+        stroke: #0277bd;
+        stroke-width: 2;
+        rx: 8;
+      }
+      .decision-diamond {
+        fill: #fff8e1;
+        stroke: #f57c00;
+        stroke-width: 2;
+      }
+      .action-rect {
+        fill: #e8f5e8;
+        stroke: #4caf50;
+        stroke-width: 2;
+        rx: 8;
+      }
+      .no-action-rect {
+        fill: #ffebee;
+        stroke: #d32f2f;
+        stroke-width: 2;
+        rx: 8;
+      }
+      .arrow {
+        stroke: #333;
+        stroke-width: 2;
+        fill: #333;
+        marker-end: url(#arrowhead-black);
+      }
+      .text-main {
+        font-family: Inter, 'Helvetica Neue', Arial, sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        text-anchor: middle;
+        fill: #333;
+      }
+      .text-secondary {
+        font-family: Inter, 'Helvetica Neue', Arial, sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        text-anchor: middle;
+        fill: #666;
+      }
+      .text-decision {
+        font-family: Inter, 'Helvetica Neue', Arial, sans-serif;
+        font-size: 12px;
+        font-weight: 500;
+        text-anchor: middle;
+        fill: #333;
+      }
+    </style>
+    
+    <!-- Arrow marker -->
+    <marker id="arrowhead-black" markerWidth="10" markerHeight="7" 
+            refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="300" fill="#fafafa" stroke="#e0e0e0"/>
+  
+  <!-- Start: 在庫確認 -->
+  <rect x="50" y="120" width="120" height="60" class="process-rect"/>
+  <text x="110" y="145" class="text-main">在庫確認</text>
+  <text x="110" y="160" class="text-secondary">現在在庫数</text>
+  
+  <!-- Decision: 発注点以下？ -->
+  <polygon points="300,80 380,120 380,180 300,220 220,180 220,120" class="decision-diamond"/>
+  <text x="300" y="140" class="text-decision">発注点</text>
+  <text x="300" y="155" class="text-decision">以下？</text>
+  
+  <!-- Yes: 発注実行 -->
+  <rect x="500" y="50" width="120" height="60" class="action-rect"/>
+  <text x="560" y="75" class="text-main">発注実行</text>
+  <text x="560" y="90" class="text-secondary">必要数量を注文</text>
+  
+  <!-- No: 発注しない -->
+  <rect x="500" y="190" width="120" height="60" class="no-action-rect"/>
+  <text x="560" y="215" class="text-main">発注しない</text>
+  <text x="560" y="230" class="text-secondary">在庫は十分</text>
+  
+  <!-- Arrows -->
+  <line x1="170" y1="150" x2="210" y2="150" class="arrow"/>
+  <line x1="350" y1="100" x2="490" y2="80" class="arrow"/>
+  <line x1="350" y1="200" x2="490" y2="220" class="arrow"/>
+  
+  <!-- Arrow labels -->
+  <text x="420" y="75" class="text-secondary">Yes</text>
+  <text x="420" y="245" class="text-secondary">No</text>
+  
+</svg>

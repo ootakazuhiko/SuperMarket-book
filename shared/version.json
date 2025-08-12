@@ -1,0 +1,46 @@
+{
+  "version": "3.1.0",
+  "updated": "2025-07-19",
+  "description": "Performance optimizations and layout improvements",
+  "components": {
+    "layouts": {
+      "version": "3.1.0",
+      "files": [
+        "layouts/book.html",
+        "layouts/default.html"
+      ]
+    },
+    "includes": {
+      "version": "3.1.0",
+      "files": [
+        "includes/sidebar-nav.html",
+        "includes/page-navigation.html"
+      ]
+    },
+    "assets": {
+      "version": "3.1.0",
+      "files": [
+        "assets/css/main.css",
+        "assets/js/main.js",
+        "assets/js/sidebar.js"
+      ]
+    },
+    "templates": {
+      "version": "1.0.0",
+      "files": [
+        "templates/_config.yml.template",
+        "templates/navigation.yml.template"
+      ]
+    },
+    "schemas": {
+      "version": "1.0.0",
+      "files": [
+        "schemas/book-config.schema.json"
+      ]
+    }
+  },
+  "compatibility": {
+    "minBookFormatterVersion": "1.0.0",
+    "jekyllVersion": ">=3.9.0"
+  }
+}

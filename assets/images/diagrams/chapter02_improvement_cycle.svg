@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <title>継続的改善サイクル</title>
+  <desc>テスト→分析→改善案→再テストの継続的改善プロセスを示した循環図</desc>
+  
+  <!-- Define styles -->
+  <defs>
+    <style>
+      .process-circle {
+        fill: #fff3e0;
+        stroke: #ff9800;
+        stroke-width: 3;
+      }
+      .arrow {
+        stroke: #ff9800;
+        stroke-width: 3;
+        fill: none;
+        marker-end: url(#arrowhead-orange);
+      }
+      .text-main {
+        font-family: Inter, 'Helvetica Neue', Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        text-anchor: middle;
+        fill: #333;
+      }
+      .text-secondary {
+        font-family: Inter, 'Helvetica Neue', Arial, sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        text-anchor: middle;
+        fill: #666;
+      }
+      .title {
+        font-family: Inter, 'Helvetica Neue', Arial, sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        text-anchor: middle;
+        fill: #333;
+      }
+    </style>
+    
+    <!-- Arrow marker -->
+    <marker id="arrowhead-orange" markerWidth="12" markerHeight="8" 
+            refX="12" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#ff9800" />
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="400" fill="#fafafa" stroke="#e0e0e0"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" class="title">継続的改善サイクル（PDCA）</text>
+  
+  <!-- Process circles -->
+  <circle cx="200" cy="120" r="60" class="process-circle"/>
+  <circle cx="600" cy="120" r="60" class="process-circle"/>
+  <circle cx="600" cy="280" r="60" class="process-circle"/>
+  <circle cx="200" cy="280" r="60" class="process-circle"/>
+  
+  <!-- Circle texts -->
+  <text x="200" y="115" class="text-main">テスト</text>
+  <text x="200" y="130" class="text-secondary">Test</text>
+  
+  <text x="600" y="115" class="text-main">分析</text>
+  <text x="600" y="130" class="text-secondary">Analyze</text>
+  
+  <text x="600" y="275" class="text-main">改善案</text>
+  <text x="600" y="290" class="text-secondary">Improve</text>
+  
+  <text x="200" y="275" class="text-main">再テスト</text>
+  <text x="200" y="290" class="text-secondary">Re-test</text>
+  
+  <!-- Curved arrows -->
+  <path d="M 260 120 Q 400 80 540 120" class="arrow"/>
+  <path d="M 600 180 Q 640 200 600 220" class="arrow"/>
+  <path d="M 540 280 Q 400 320 260 280" class="arrow"/>
+  <path d="M 200 220 Q 160 200 200 180" class="arrow"/>
+  
+  <!-- Arrow labels -->
+  <text x="400" y="70" class="text-secondary">結果を評価</text>
+  <text x="650" y="200" class="text-secondary">課題を</text>
+  <text x="650" y="215" class="text-secondary">特定</text>
+  <text x="400" y="350" class="text-secondary">新しい方法で実施</text>
+  <text x="150" y="200" class="text-secondary">効果を</text>
+  <text x="150" y="215" class="text-secondary">確認</text>
+  
+</svg>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
+  <title>価格設定による売上への影響フロー</title>
+  <desc>価格を下げる→お客様が増える→売上が上がるという一連の流れを示した図</desc>
+  
+  <!-- Define styles -->
+  <defs>
+    <style>
+      .process-box {
+        fill: #e3f2fd;
+        stroke: #1976d2;
+        stroke-width: 2;
+        rx: 8;
+      }
+      .arrow {
+        stroke: #1976d2;
+        stroke-width: 2;
+        fill: #1976d2;
+        marker-end: url(#arrowhead);
+      }
+      .text-main {
+        font-family: Inter, 'Helvetica Neue', Arial, sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        text-anchor: middle;
+        fill: #333;
+      }
+      .text-secondary {
+        font-family: Inter, 'Helvetica Neue', Arial, sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        text-anchor: middle;
+        fill: #666;
+      }
+    </style>
+    
+    <!-- Arrow marker -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+            refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#1976d2" />
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="200" fill="#fafafa" stroke="#e0e0e0"/>
+  
+  <!-- Process boxes -->
+  <rect x="50" y="60" width="140" height="80" class="process-box"/>
+  <rect x="330" y="60" width="140" height="80" class="process-box"/>
+  <rect x="610" y="60" width="140" height="80" class="process-box"/>
+  
+  <!-- Box texts -->
+  <text x="120" y="90" class="text-main">価格を下げる</text>
+  <text x="120" y="110" class="text-secondary">価格競争力向上</text>
+  
+  <text x="400" y="90" class="text-main">お客様が増える</text>
+  <text x="400" y="110" class="text-secondary">需要の増加</text>
+  
+  <text x="680" y="90" class="text-main">売上が上がる</text>
+  <text x="680" y="110" class="text-secondary">(利益は？)</text>
+  
+  <!-- Arrows -->
+  <line x1="190" y1="100" x2="320" y2="100" class="arrow"/>
+  <line x1="470" y1="100" x2="600" y2="100" class="arrow"/>
+  
+</svg>

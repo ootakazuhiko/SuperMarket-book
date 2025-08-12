@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <title>会社のお金の3つの流れ</title>
+  <desc>営業活動、投資活動、財務活動による現金フローの種類を示した図</desc>
+  
+  <!-- Define styles -->
+  <defs>
+    <style>
+      .operating-box {
+        fill: #e3f2fd;
+        stroke: #1976d2;
+        stroke-width: 2;
+        rx: 8;
+      }
+      .investing-box {
+        fill: #e8f5e8;
+        stroke: #4caf50;
+        stroke-width: 2;
+        rx: 8;
+      }
+      .financing-box {
+        fill: #fff3e0;
+        stroke: #ff9800;
+        stroke-width: 2;
+        rx: 8;
+      }
+      .title-text {
+        font-family: Inter, 'Helvetica Neue', Arial, sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        text-anchor: middle;
+        fill: #333;
+      }
+      .category-title {
+        font-family: Inter, 'Helvetica Neue', Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        text-anchor: middle;
+        fill: #333;
+      }
+      .text-main {
+        font-family: Inter, 'Helvetica Neue', Arial, sans-serif;
+        font-size: 13px;
+        font-weight: 500;
+        text-anchor: start;
+        fill: #333;
+      }
+      .text-amount {
+        font-family: Inter, 'Helvetica Neue', Arial, sans-serif;
+        font-size: 13px;
+        font-weight: 600;
+        text-anchor: end;
+        fill: #333;
+      }
+      .text-positive {
+        fill: #4caf50;
+      }
+      .text-negative {
+        fill: #f44336;
+      }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="500" fill="#fafafa" stroke="#e0e0e0"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" class="title-text">会社のお金の3つの流れ</text>
+  
+  <!-- Operating Activities -->
+  <rect x="50" y="60" width="220" height="200" class="operating-box"/>
+  <text x="160" y="85" class="category-title">営業活動</text>
+  <text x="160" y="100" class="text-main" text-anchor="middle">本業によるお金の流れ</text>
+  
+  <text x="70" y="125" class="text-main">売上収入</text>
+  <text x="220" y="125" class="text-amount text-positive">+800万円</text>
+  
+  <text x="70" y="145" class="text-main">仕入代金</text>
+  <text x="220" y="145" class="text-amount text-negative">-500万円</text>
+  
+  <text x="70" y="165" class="text-main">給与支払</text>
+  <text x="220" y="165" class="text-amount text-negative">-150万円</text>
+  
+  <text x="70" y="185" class="text-main">家賃支払</text>
+  <text x="220" y="185" class="text-amount text-negative">-50万円</text>
+  
+  <text x="70" y="205" class="text-main">その他経費</text>
+  <text x="220" y="205" class="text-amount text-negative">-30万円</text>
+  
+  <line x1="70" y1="220" x2="220" y2="220" stroke="#1976d2" stroke-width="2"/>
+  <text x="70" y="240" class="text-main" style="font-weight: 600;">営業CF</text>
+  <text x="220" y="240" class="text-amount text-positive" style="font-weight: 600;">+70万円</text>
+  
+  <!-- Investing Activities -->
+  <rect x="290" y="60" width="220" height="200" class="investing-box"/>
+  <text x="400" y="85" class="category-title">投資活動</text>
+  <text x="400" y="100" class="text-main" text-anchor="middle">将来への設備投資</text>
+  
+  <text x="310" y="125" class="text-main">設備購入</text>
+  <text x="460" y="125" class="text-amount text-negative">-200万円</text>
+  
+  <text x="310" y="145" class="text-main">システム導入</text>
+  <text x="460" y="145" class="text-amount text-negative">-100万円</text>
+  
+  <text x="310" y="165" class="text-main">店舗保証金</text>
+  <text x="460" y="165" class="text-amount text-negative">-50万円</text>
+  
+  <line x1="310" y1="180" x2="460" y2="180" stroke="#4caf50" stroke-width="2"/>
+  <text x="310" y="200" class="text-main" style="font-weight: 600;">投資CF</text>
+  <text x="460" y="200" class="text-amount text-negative" style="font-weight: 600;">-350万円</text>
+  
+  <!-- Financing Activities -->
+  <rect x="530" y="60" width="220" height="200" class="financing-box"/>
+  <text x="640" y="85" class="category-title">財務活動</text>
+  <text x="640" y="100" class="text-main" text-anchor="middle">資金の調達と返済</text>
+  
+  <text x="550" y="125" class="text-main">銀行借入</text>
+  <text x="700" y="125" class="text-amount text-positive">+500万円</text>
+  
+  <text x="550" y="145" class="text-main">借入返済</text>
+  <text x="700" y="145" class="text-amount text-negative">-80万円</text>
+  
+  <text x="550" y="165" class="text-main">利息支払</text>
+  <text x="700" y="165" class="text-amount text-negative">-10万円</text>
+  
+  <line x1="550" y1="180" x2="700" y2="180" stroke="#ff9800" stroke-width="2"/>
+  <text x="550" y="200" class="text-main" style="font-weight: 600;">財務CF</text>
+  <text x="700" y="200" class="text-amount text-positive" style="font-weight: 600;">+410万円</text>
+  
+  <!-- Summary -->
+  <rect x="200" y="300" width="400" height="120" fill="#f5f5f5" stroke="#666" stroke-width="2" rx="8"/>
+  <text x="400" y="325" class="category-title">現金の変動</text>
+  
+  <text x="220" y="350" class="text-main">営業キャッシュフロー</text>
+  <text x="560" y="350" class="text-amount text-positive">+70万円</text>
+  
+  <text x="220" y="370" class="text-main">投資キャッシュフロー</text>
+  <text x="560" y="370" class="text-amount text-negative">-350万円</text>
+  
+  <text x="220" y="390" class="text-main">財務キャッシュフロー</text>
+  <text x="560" y="390" class="text-amount text-positive">+410万円</text>
+  
+  <line x1="220" y1="400" x2="560" y2="400" stroke="#333" stroke-width="2"/>
+  <text x="220" y="415" class="text-main" style="font-weight: 600;">現金増減</text>
+  <text x="560" y="415" class="text-amount text-positive" style="font-weight: 600;">+130万円</text>
+  
+</svg>

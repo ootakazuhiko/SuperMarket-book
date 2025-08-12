@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
+  <title>レジ増設による顧客満足度向上フロー</title>
+  <desc>レジを増やす→待ち時間が減る→お客様の満足度が上がるという流れを示した図</desc>
+  
+  <!-- Define styles -->
+  <defs>
+    <style>
+      .process-box {
+        fill: #e8f5e8;
+        stroke: #4caf50;
+        stroke-width: 2;
+        rx: 8;
+      }
+      .arrow {
+        stroke: #4caf50;
+        stroke-width: 2;
+        fill: #4caf50;
+        marker-end: url(#arrowhead-green);
+      }
+      .text-main {
+        font-family: Inter, 'Helvetica Neue', Arial, sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        text-anchor: middle;
+        fill: #333;
+      }
+      .text-secondary {
+        font-family: Inter, 'Helvetica Neue', Arial, sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        text-anchor: middle;
+        fill: #666;
+      }
+    </style>
+    
+    <!-- Arrow marker -->
+    <marker id="arrowhead-green" markerWidth="10" markerHeight="7" 
+            refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4caf50" />
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="300" fill="#fafafa" stroke="#e0e0e0"/>
+  
+  <!-- Process boxes -->
+  <rect x="50" y="100" width="140" height="100" class="process-box"/>
+  <rect x="330" y="100" width="140" height="100" class="process-box"/>
+  <rect x="610" y="100" width="140" height="100" class="process-box"/>
+  
+  <!-- Box texts -->
+  <text x="120" y="130" class="text-main">レジを増やす</text>
+  <text x="120" y="150" class="text-secondary">設備投資</text>
+  <text x="120" y="170" class="text-secondary">処理能力向上</text>
+  
+  <text x="400" y="130" class="text-main">待ち時間が減る</text>
+  <text x="400" y="150" class="text-secondary">効率性改善</text>
+  <text x="400" y="170" class="text-secondary">ストレス軽減</text>
+  
+  <text x="680" y="130" class="text-main">お客様の</text>
+  <text x="680" y="150" class="text-main">満足度が上がる</text>
+  <text x="680" y="170" class="text-secondary">リピート率向上</text>
+  
+  <!-- Arrows -->
+  <line x1="190" y1="150" x2="320" y2="150" class="arrow"/>
+  <line x1="470" y1="150" x2="600" y2="150" class="arrow"/>
+  
+</svg>

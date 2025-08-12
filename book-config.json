@@ -1,0 +1,161 @@
+{
+  "book": {
+    "title": "スーパーマーケットシミュレーターから学ぶ経営学入門",
+    "subtitle": "ゲームで学ぶビジネスの基本",
+    "author": {
+      "name": "太田和彦",
+      "organization": "ITDO Inc.",
+      "email": "knowledge@itdo.jp"
+    },
+    "description": "人気ゲーム「Supermarket Simulator」を題材に、中学生でも理解できる経営学の基本を学ぶ実践的な入門書。店舗設計、在庫管理、価格戦略、財務管理まで、ゲームプレイを通じて本格的なビジネス知識を習得。",
+    "language": "ja",
+    "version": "1.0.0",
+    "publisher": "ITDO Inc.",
+    "isbn": "",
+    "keywords": ["経営学", "ビジネス", "シミュレーション", "ゲーム学習", "中学生向け", "Supermarket Simulator"],
+    "category": "ビジネス・経済",
+    "targetAudience": "中学生（12-15歳）",
+    "repository": {
+      "github": "https://github.com/ootakazuhiko/SuperMarket-book"
+    },
+    "copyright": "© 2025 ITDO Inc. All rights reserved.",
+    "license": "MIT"
+  },
+  "build": {
+    "outputFormats": ["html", "pdf", "epub"],
+    "theme": "modern",
+    "codeTheme": "github",
+    "generateTOC": true,
+    "generateIndex": true,
+    "chapterNumbering": true,
+    "sectionNumbering": true,
+    "figureNumbering": true,
+    "tableNumbering": true,
+    "equationNumbering": false,
+    "citationStyle": "numeric",
+    "bibliography": false,
+    "glossary": true,
+    "debug": false
+  },
+  "structure": {
+    "introduction": {
+      "title": "はじめに",
+      "enabled": true
+    },
+    "chapters": [
+      {
+        "number": 1,
+        "title": "ゲームで学ぶ経営の基本",
+        "file": "chapter01.md",
+        "enabled": true
+      },
+      {
+        "number": 2,
+        "title": "店舗設計と顧客導線",
+        "file": "chapter02.md",
+        "enabled": true
+      },
+      {
+        "number": 3,
+        "title": "商品仕入れと在庫管理",
+        "file": "chapter03.md",
+        "enabled": true
+      },
+      {
+        "number": 4,
+        "title": "価格戦略と利益管理",
+        "file": "chapter04.md",
+        "enabled": true
+      },
+      {
+        "number": 5,
+        "title": "顧客サービスとブランド構築",
+        "file": "chapter05.md",
+        "enabled": true
+      },
+      {
+        "number": 6,
+        "title": "財務管理と資金調達",
+        "file": "chapter06.md",
+        "enabled": true
+      },
+      {
+        "number": 7,
+        "title": "データ分析と意思決定",
+        "file": "chapter07.md",
+        "enabled": true
+      },
+      {
+        "number": 8,
+        "title": "成長戦略と投資判断",
+        "file": "chapter08.md",
+        "enabled": true
+      },
+      {
+        "number": 9,
+        "title": "実世界への応用と次のステップ",
+        "file": "chapter09.md",
+        "enabled": true
+      }
+    ],
+    "appendices": [
+      {
+        "letter": "A",
+        "title": "ビジネス計算式集",
+        "file": "appendix-a.md",
+        "enabled": true
+      },
+      {
+        "letter": "B",
+        "title": "用語集",
+        "file": "appendix-b.md",
+        "enabled": true
+      },
+      {
+        "letter": "C",
+        "title": "参考資料",
+        "file": "appendix-c.md",
+        "enabled": true
+      }
+    ],
+    "afterword": {
+      "title": "おわりに",
+      "enabled": false
+    }
+  },
+  "contentSections": [
+    {
+      "name": "introduction",
+      "directory": "introduction",
+      "enabled": true,
+      "order": 1
+    },
+    {
+      "name": "chapters",
+      "directory": "chapters",
+      "enabled": true,
+      "order": 2
+    },
+    {
+      "name": "appendices",
+      "directory": "appendices",
+      "enabled": true,
+      "order": 3
+    }
+  ],
+  "excludePatterns": ["*.tmp", "draft.md", "notes.md"],
+  "contentExcludePatterns": ["<!-- PRIVATE:", "<!-- TODO:", "<!-- DRAFT:"],
+  "features": {
+    "search": true,
+    "darkMode": true,
+    "copyCode": true,
+    "navigation": true,
+    "progressBar": true,
+    "readingTime": true,
+    "lastUpdated": true,
+    "editOnGitHub": true,
+    "socialSharing": false,
+    "comments": false,
+    "analytics": false
+  }
+}
