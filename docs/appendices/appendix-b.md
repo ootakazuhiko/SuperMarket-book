@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: book
 title: "付録A　用語集"
+chapter: appendix-b
 ---
 
 # 付録A　用語集

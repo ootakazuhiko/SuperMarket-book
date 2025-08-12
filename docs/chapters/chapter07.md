@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: book
 title: "第7章　お金の流れを理解する"
+chapter: chapter07
 ---
 
 # 第7章　お金の流れを理解する

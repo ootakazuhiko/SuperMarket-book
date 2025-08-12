@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: book
 title: "付録B　計算式一覧"
+chapter: appendix-a
 ---
 
 # 付録B　計算式一覧

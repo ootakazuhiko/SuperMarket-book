@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: book
 title: "第9章　現実世界のビジネスへ"
+chapter: chapter09
 ---
 
 # 第9章　現実世界のビジネスへ

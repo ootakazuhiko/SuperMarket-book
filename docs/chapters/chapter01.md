@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: book
 title: "第1章　ゲームで学ぶ経営の基本"
+chapter: chapter01
 ---
 
 # 第1章　ゲームで学ぶ経営の基本

@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: book
 title: "第6章　成長戦略と投資判断"
+chapter: chapter06
 ---
 
 # 第6章　成長戦略と投資判断

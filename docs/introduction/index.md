@@ -1,6 +1,7 @@
 ---
 layout: book
-title: "まえがき"
+title: "はじめに"
+chapter: introduction
 ---
 
 # まえがき

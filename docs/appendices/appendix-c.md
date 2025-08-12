@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: book
 title: "付録C　参考資料"
+chapter: appendix-c
 ---
 
 # 付録C　参考資料

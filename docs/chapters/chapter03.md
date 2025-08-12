@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: book
 title: "第3章　仕入れと在庫の科学"
+chapter: chapter03
 ---
 
 # 第3章　仕入れと在庫の科学

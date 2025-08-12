@@ -1,0 +1,87 @@
+<nav class="page-navigation">
+  {% assign chapters = "chapter01,chapter02,chapter03,chapter04,chapter05,chapter06,chapter07,chapter08,chapter09" | split: "," %}
+  {% assign current_index = -1 %}
+  
+  {% for chapter in chapters %}
+    {% if page.url contains chapter %}
+      {% assign current_index = forloop.index0 %}
+    {% endif %}
+  {% endfor %}
+
+  <div class="nav-buttons">
+    <!-- 前のページ -->
+    <div class="nav-prev">
+      {% if page.url contains "introduction" %}
+        <!-- はじめにの場合、前はホーム -->
+        <a href="{{ '/' | relative_url }}" class="nav-link">
+          <span class="nav-arrow">←</span>
+          <span class="nav-text">ホーム</span>
+        </a>
+      {% elsif current_index == 0 %}
+        <!-- 第1章の場合、前ははじめに -->
+        <a href="{{ '/introduction/' | relative_url }}" class="nav-link">
+          <span class="nav-arrow">←</span>
+          <span class="nav-text">はじめに</span>
+        </a>
+      {% elsif current_index > 0 %}
+        <!-- その他の章の場合、前の章へ -->
+        {% assign prev_index = current_index | minus: 1 %}
+        {% assign prev_chapter = chapters[prev_index] %}
+        <a href="{{ '/chapters/' | append: prev_chapter | relative_url }}" class="nav-link">
+          <span class="nav-arrow">←</span>
+          <span class="nav-text">第{{ prev_index | plus: 1 }}章</span>
+        </a>
+      {% elsif page.url contains "appendix-a" %}
+        <a href="{{ '/chapters/chapter09' | relative_url }}" class="nav-link">
+          <span class="nav-arrow">←</span>
+          <span class="nav-text">第9章</span>
+        </a>
+      {% elsif page.url contains "appendix-b" %}
+        <a href="{{ '/appendices/appendix-a' | relative_url }}" class="nav-link">
+          <span class="nav-arrow">←</span>
+          <span class="nav-text">付録A</span>
+        </a>
+      {% elsif page.url contains "appendix-c" %}
+        <a href="{{ '/appendices/appendix-b' | relative_url }}" class="nav-link">
+          <span class="nav-arrow">←</span>
+          <span class="nav-text">付録B</span>
+        </a>
+      {% endif %}
+    </div>
+
+    <!-- 次のページ -->
+    <div class="nav-next">
+      {% if page.url contains "introduction" %}
+        <!-- はじめにの場合、次は第1章 -->
+        <a href="{{ '/chapters/chapter01' | relative_url }}" class="nav-link">
+          <span class="nav-text">第1章</span>
+          <span class="nav-arrow">→</span>
+        </a>
+      {% elsif current_index >= 0 and current_index < 8 %}
+        <!-- 第1-8章の場合、次の章へ -->
+        {% assign next_index = current_index | plus: 1 %}
+        {% assign next_chapter = chapters[next_index] %}
+        <a href="{{ '/chapters/' | append: next_chapter | relative_url }}" class="nav-link">
+          <span class="nav-text">第{{ next_index | plus: 1 }}章</span>
+          <span class="nav-arrow">→</span>
+        </a>
+      {% elsif current_index == 8 %}
+        <!-- 第9章の場合、次は付録A -->
+        <a href="{{ '/appendices/appendix-a' | relative_url }}" class="nav-link">
+          <span class="nav-text">付録A</span>
+          <span class="nav-arrow">→</span>
+        </a>
+      {% elsif page.url contains "appendix-a" %}
+        <a href="{{ '/appendices/appendix-b' | relative_url }}" class="nav-link">
+          <span class="nav-text">付録B</span>
+          <span class="nav-arrow">→</span>
+        </a>
+      {% elsif page.url contains "appendix-b" %}
+        <a href="{{ '/appendices/appendix-c' | relative_url }}" class="nav-link">
+          <span class="nav-text">付録C</span>
+          <span class="nav-arrow">→</span>
+        </a>
+      {% endif %}
+    </div>
+  </div>
+</nav>

@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: book
 title: "第5章　顧客満足度の管理"
+chapter: chapter05
 ---
 
 # 第5章　顧客満足度の管理

@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: book
 title: "第8章　データで経営を改善する"
+chapter: chapter08
 ---
 
 # 第8章　データで経営を改善する

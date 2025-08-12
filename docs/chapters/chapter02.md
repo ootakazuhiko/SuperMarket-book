@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: book
 title: "第2章　店舗設計と顧客導線"
+chapter: chapter02
 ---
 
 # 第2章　店舗設計と顧客導線

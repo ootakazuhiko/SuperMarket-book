@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: book
 title: "第4章　価格戦略の考え方"
+chapter: chapter04
 ---
 
 # 第4章　価格戦略の考え方
