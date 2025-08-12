@@ -1,0 +1,164 @@
+/* Syntax Highlighting and Search Results */
+
+/* Search Results Dropdown */
+.search-results {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin-top: 5px;
+  background-color: var(--background-color);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-height: 400px;
+  overflow-y: auto;
+  z-index: 1001;
+}
+
+.search-result-item {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: var(--text-color);
+  border-bottom: 1px solid var(--border-color);
+  transition: background-color 0.2s;
+}
+
+.search-result-item:last-child {
+  border-bottom: none;
+}
+
+.search-result-item:hover {
+  background-color: var(--hover-bg);
+}
+
+.search-result-title {
+  font-weight: 600;
+  margin-bottom: 4px;
+  font-size: 0.95rem;
+}
+
+.search-result-content {
+  font-size: 0.85rem;
+  opacity: 0.7;
+  line-height: 1.4;
+}
+
+.search-result-item mark {
+  background-color: #ffeb3b;
+  color: #000;
+  padding: 0 2px;
+  border-radius: 2px;
+}
+
+.no-results {
+  padding: 15px;
+  text-align: center;
+  color: var(--text-color);
+  opacity: 0.6;
+}
+
+/* Code Syntax Highlighting */
+.highlight {
+  background-color: var(--code-bg);
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  overflow-x: auto;
+}
+
+.highlight pre {
+  margin: 0;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.highlight code {
+  background: none;
+  padding: 0;
+  font-family: 'SF Mono', Monaco, 'Courier New', monospace;
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+
+/* Language-specific highlighting */
+.language-javascript .keyword,
+.language-js .keyword,
+.language-typescript .keyword,
+.language-ts .keyword {
+  color: #d73a49;
+  font-weight: 600;
+}
+
+.language-javascript .string,
+.language-js .string,
+.language-typescript .string,
+.language-ts .string {
+  color: #032f62;
+}
+
+.language-javascript .comment,
+.language-js .comment,
+.language-typescript .comment,
+.language-ts .comment {
+  color: #6a737d;
+  font-style: italic;
+}
+
+.language-javascript .function,
+.language-js .function,
+.language-typescript .function,
+.language-ts .function {
+  color: #6f42c1;
+}
+
+.language-javascript .number,
+.language-js .number,
+.language-typescript .number,
+.language-ts .number {
+  color: #005cc5;
+}
+
+/* Dark theme syntax highlighting */
+[data-theme="dark"] .language-javascript .keyword,
+[data-theme="dark"] .language-js .keyword,
+[data-theme="dark"] .language-typescript .keyword,
+[data-theme="dark"] .language-ts .keyword {
+  color: #f97583;
+}
+
+[data-theme="dark"] .language-javascript .string,
+[data-theme="dark"] .language-js .string,
+[data-theme="dark"] .language-typescript .string,
+[data-theme="dark"] .language-ts .string {
+  color: #9ecbff;
+}
+
+[data-theme="dark"] .language-javascript .comment,
+[data-theme="dark"] .language-js .comment,
+[data-theme="dark"] .language-typescript .comment,
+[data-theme="dark"] .language-ts .comment {
+  color: #8b949e;
+}
+
+[data-theme="dark"] .language-javascript .function,
+[data-theme="dark"] .language-js .function,
+[data-theme="dark"] .language-typescript .function,
+[data-theme="dark"] .language-ts .function {
+  color: #d2a8ff;
+}
+
+[data-theme="dark"] .language-javascript .number,
+[data-theme="dark"] .language-js .number,
+[data-theme="dark"] .language-typescript .number,
+[data-theme="dark"] .language-ts .number {
+  color: #79c0ff;
+}
+
+/* Inline code dark theme */
+[data-theme="dark"] .search-result-item mark {
+  background-color: #444;
+  color: #ffeb3b;
+}

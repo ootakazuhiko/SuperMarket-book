@@ -7,42 +7,83 @@
   <meta name="description" content="{{ page.description | default: site.description }}">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/book.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/syntax-highlighting.css' | relative_url }}">
 </head>
 <body>
-  <div class="book-container">
-    <!-- サイドバー -->
-    <aside class="sidebar">
-      <div class="sidebar-header">
-        <h2 class="sidebar-title">
+  <div class="book-wrapper">
+    <!-- ヘッダー -->
+    <header class="book-header">
+      <div class="header-left">
+        <button class="hamburger-menu" id="hamburger-menu" aria-label="メニュー">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <h1 class="site-title">
           <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
-        </h2>
+        </h1>
       </div>
-      {% include sidebar-nav.html %}
-    </aside>
+      
+      <div class="header-right">
+        <div class="search-container">
+          <input type="search" class="search-input" placeholder="検索..." aria-label="検索">
+          <button class="search-button" aria-label="検索実行">
+            <svg width="20" height="20" viewBox="0 0 20 20">
+              <path d="M8.5 3a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 8.5a6.5 6.5 0 1111.436 4.23l4.834 4.835a.75.75 0 11-1.06 1.06l-4.835-4.834A6.5 6.5 0 012 8.5z" fill="currentColor"/>
+            </svg>
+          </button>
+        </div>
+        
+        <button class="theme-toggle" id="theme-toggle" aria-label="テーマ切替">
+          <svg class="sun-icon" width="24" height="24" viewBox="0 0 24 24">
+            <path d="M12 17.5a5.5 5.5 0 110-11 5.5 5.5 0 010 11zm0-1a4.5 4.5 0 100-9 4.5 4.5 0 000 9zm0-12.5a.5.5 0 01.5.5v2a.5.5 0 01-1 0v-2a.5.5 0 01.5-.5zm0 13a.5.5 0 01.5.5v2a.5.5 0 01-1 0v-2a.5.5 0 01.5-.5zm-7-5a.5.5 0 01.5-.5h2a.5.5 0 010 1h-2a.5.5 0 01-.5-.5zm13 0a.5.5 0 01.5-.5h2a.5.5 0 010 1h-2a.5.5 0 01-.5-.5zM5.99 7.05a.5.5 0 01.707 0l1.414 1.414a.5.5 0 11-.707.707L5.99 7.757a.5.5 0 010-.707zm11.314 11.314a.5.5 0 01.707 0l1.414 1.414a.5.5 0 01-.707.707l-1.414-1.414a.5.5 0 010-.707zM7.404 17.697a.5.5 0 010 .707l-1.414 1.414a.5.5 0 11-.707-.707l1.414-1.414a.5.5 0 01.707 0zm11.314-11.314a.5.5 0 010 .707L17.304 8.504a.5.5 0 01-.707-.707l1.414-1.414a.5.5 0 01.707 0z" fill="currentColor"/>
+          </svg>
+          <svg class="moon-icon" width="24" height="24" viewBox="0 0 24 24" style="display: none;">
+            <path d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" fill="currentColor"/>
+          </svg>
+        </button>
+        
+        <a href="{{ site.repository.github }}" class="github-link" aria-label="GitHub" target="_blank" rel="noopener">
+          <svg width="24" height="24" viewBox="0 0 24 24">
+            <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z" fill="currentColor"/>
+          </svg>
+        </a>
+      </div>
+    </header>
 
-    <!-- メインコンテンツ -->
-    <main class="main-content">
-      <!-- ヘッダー -->
-      <header class="page-header">
-        <div class="breadcrumb">
+    <div class="book-container">
+      <!-- サイドバー -->
+      <aside class="sidebar" id="sidebar">
+        <div class="sidebar-overlay" id="sidebar-overlay"></div>
+        <nav class="sidebar-content">
+          {% include sidebar-nav.html %}
+        </nav>
+      </aside>
+
+      <!-- メインコンテンツ -->
+      <main class="main-content">
+        <!-- パンくずナビゲーション -->
+        <nav class="breadcrumb" aria-label="パンくず">
           <a href="{{ '/' | relative_url }}">ホーム</a>
           {% if page.chapter %}
-            <span class="separator">></span>
+            <span class="separator">›</span>
             <span class="current">{{ page.title }}</span>
           {% endif %}
-        </div>
-      </header>
+        </nav>
 
-      <!-- コンテンツ -->
-      <article class="page-content">
-        {{ content }}
-      </article>
+        <!-- コンテンツ -->
+        <article class="page-content">
+          {{ content }}
+        </article>
 
-      <!-- ページナビゲーション -->
-      {% include page-navigation.html %}
-    </main>
+        <!-- ページナビゲーション -->
+        {% include page-navigation.html %}
+      </main>
+    </div>
   </div>
 
-  <script src="{{ '/assets/js/sidebar.js' | relative_url }}"></script>
+  <script src="{{ '/assets/js/theme.js' | relative_url }}"></script>
+  <script src="{{ '/assets/js/navigation.js' | relative_url }}"></script>
+  <script src="{{ '/assets/js/search.js' | relative_url }}"></script>
 </body>
 </html>
