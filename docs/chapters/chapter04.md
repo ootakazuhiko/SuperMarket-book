@@ -1,11 +1,10 @@
 ---
-layout: book
+layout: default
 title: "第4章　価格戦略の考え方"
 ---
 
 # 第4章　価格戦略の考え方
 
-{% include navigation.html %}
 
 
 **学習目標**: プライシング戦略と競争分析の基本を習得する
@@ -1055,4 +1054,3 @@ Venti（XL）：460円
 
 次の第5章では、顧客満足度の管理について学びます。お客様に喜んでもらうことが、長期的な事業成功の基盤となります。
 
-{% include navigation.html %}

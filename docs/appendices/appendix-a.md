@@ -1,11 +1,10 @@
 ---
-layout: book
+layout: default
 title: "付録B　計算式一覧"
 ---
 
 # 付録B　計算式一覧
 
-{% include navigation.html %}
 
 
 ## 基本的な損益計算
@@ -355,4 +354,3 @@ ROE = 80万円 ÷ 800万円 × 100 = 10%
 
 これらの計算式は基本的なものです。実際のビジネスではより複雑な要因を考慮した分析が必要な場合があります。
 
-{% include navigation.html %}

@@ -1,11 +1,10 @@
 ---
-layout: book
+layout: default
 title: "付録C　参考資料"
 ---
 
 # 付録C　参考資料
 
-{% include navigation.html %}
 
 
 ## 推薦図書
@@ -491,4 +490,3 @@ title: "付録C　参考資料"
 
 この参考資料を活用して、継続的な学習と成長を実現してください。
 
-{% include navigation.html %}

@@ -1,11 +1,10 @@
 ---
-layout: book
+layout: default
 title: "付録A　用語集"
 ---
 
 # 付録A　用語集
 
-{% include navigation.html %}
 
 
 ## あ行
@@ -225,4 +224,3 @@ Product（商品）、Price（価格）、Place（流通）、Promotion（販促
 
 ※この用語集は本書で使用された主要な経営用語を収録しています。より詳細な説明や関連用語については、各章の該当箇所を参照してください。
 
-{% include navigation.html %}
