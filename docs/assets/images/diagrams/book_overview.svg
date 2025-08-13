@@ -1,0 +1,180 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+  <title>本書の学習フロー</title>
+  <desc>スーパーマーケットシミュレーターから学ぶ経営学入門の全体構成と学習の流れ</desc>
+  
+  <defs>
+    <style>
+      :root {
+        --primary-color: #3B82F6;
+        --success-color: #10B981;
+        --warning-color: #F59E0B;
+        --error-color: #EF4444;
+        --neutral-color: #6B7280;
+        --text-color: #1F2937;
+        --bg-color: #FFFFFF;
+        --stroke-width: 2;
+      }
+      
+      .bg { fill: var(--bg-color); }
+      .text { 
+        fill: var(--text-color); 
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+      }
+      .title-text { font-size: 16px; font-weight: 600; }
+      .label-text { font-size: 14px; font-weight: 500; }
+      .detail-text { font-size: 12px; font-weight: 400; }
+      
+      .phase-box { 
+        fill: #F3F4F6; 
+        stroke: var(--neutral-color); 
+        stroke-width: var(--stroke-width);
+        rx: 4;
+      }
+      .game-box { 
+        fill: #DBEAFE; 
+        stroke: var(--primary-color); 
+        stroke-width: var(--stroke-width);
+        rx: 4;
+      }
+      .theory-box { 
+        fill: #D1FAE5; 
+        stroke: var(--success-color); 
+        stroke-width: var(--stroke-width);
+        rx: 4;
+      }
+      .practice-box { 
+        fill: #FED7AA; 
+        stroke: var(--warning-color); 
+        stroke-width: var(--stroke-width);
+        rx: 4;
+      }
+      
+      .arrow {
+        fill: none;
+        stroke: var(--neutral-color);
+        stroke-width: 2;
+        marker-end: url(#arrowhead);
+      }
+      
+      .arrow-primary {
+        stroke: var(--primary-color);
+        stroke-width: 3;
+      }
+    </style>
+    
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="var(--neutral-color)" />
+    </marker>
+    
+    <marker id="arrowhead-primary" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="var(--primary-color)" />
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" class="bg" />
+  
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" class="text title-text">
+    ゲーム体験から経営学へ：3つの学習段階
+  </text>
+  
+  <!-- Phase 1: Game Experience (Foundation) -->
+  <g id="phase1" transform="translate(40, 60)">
+    <rect width="720" height="120" class="phase-box" />
+    <text x="20" y="25" class="text label-text" font-weight="600">第1段階：ゲーム体験（基礎編）</text>
+    
+    <!-- Chapter boxes -->
+    <g transform="translate(20, 40)">
+      <rect x="0" y="0" width="160" height="60" class="game-box" />
+      <text x="80" y="25" text-anchor="middle" class="text label-text">第1章</text>
+      <text x="80" y="42" text-anchor="middle" class="text detail-text">経営の基本</text>
+      
+      <rect x="185" y="0" width="160" height="60" class="game-box" />
+      <text x="265" y="25" text-anchor="middle" class="text label-text">第2章</text>
+      <text x="265" y="42" text-anchor="middle" class="text detail-text">店舗設計</text>
+      
+      <rect x="370" y="0" width="160" height="60" class="game-box" />
+      <text x="450" y="25" text-anchor="middle" class="text label-text">第3章</text>
+      <text x="450" y="42" text-anchor="middle" class="text detail-text">在庫管理</text>
+      
+      <rect x="555" y="0" width="125" height="60" class="game-box" />
+      <text x="617" y="30" text-anchor="middle" class="text detail-text">ゲーム操作を</text>
+      <text x="617" y="45" text-anchor="middle" class="text detail-text">マスター</text>
+    </g>
+  </g>
+  
+  <!-- Arrow from Phase 1 to Phase 2 -->
+  <path d="M 400 180 L 400 220" class="arrow arrow-primary" marker-end="url(#arrowhead-primary)" />
+  
+  <!-- Phase 2: Strategic Thinking (Application) -->
+  <g id="phase2" transform="translate(40, 220)">
+    <rect width="720" height="120" class="phase-box" />
+    <text x="20" y="25" class="text label-text" font-weight="600">第2段階：戦略的思考（戦略編）</text>
+    
+    <!-- Chapter boxes -->
+    <g transform="translate(20, 40)">
+      <rect x="0" y="0" width="160" height="60" class="theory-box" />
+      <text x="80" y="25" text-anchor="middle" class="text label-text">第4章</text>
+      <text x="80" y="42" text-anchor="middle" class="text detail-text">価格戦略</text>
+      
+      <rect x="185" y="0" width="160" height="60" class="theory-box" />
+      <text x="265" y="25" text-anchor="middle" class="text label-text">第5章</text>
+      <text x="265" y="42" text-anchor="middle" class="text detail-text">顧客満足度</text>
+      
+      <rect x="370" y="0" width="160" height="60" class="theory-box" />
+      <text x="450" y="25" text-anchor="middle" class="text label-text">第6章</text>
+      <text x="450" y="42" text-anchor="middle" class="text detail-text">成長戦略</text>
+      
+      <rect x="555" y="0" width="125" height="60" class="theory-box" />
+      <text x="617" y="30" text-anchor="middle" class="text detail-text">経営理論を</text>
+      <text x="617" y="45" text-anchor="middle" class="text detail-text">理解</text>
+    </g>
+  </g>
+  
+  <!-- Arrow from Phase 2 to Phase 3 -->
+  <path d="M 400 340 L 400 380" class="arrow arrow-primary" marker-end="url(#arrowhead-primary)" />
+  
+  <!-- Phase 3: Data Management (Advanced) -->
+  <g id="phase3" transform="translate(40, 380)">
+    <rect width="720" height="120" class="phase-box" />
+    <text x="20" y="25" class="text label-text" font-weight="600">第3段階：数字で経営（管理編）</text>
+    
+    <!-- Chapter boxes -->
+    <g transform="translate(20, 40)">
+      <rect x="0" y="0" width="160" height="60" class="practice-box" />
+      <text x="80" y="25" text-anchor="middle" class="text label-text">第7章</text>
+      <text x="80" y="42" text-anchor="middle" class="text detail-text">財務管理</text>
+      
+      <rect x="185" y="0" width="160" height="60" class="practice-box" />
+      <text x="265" y="25" text-anchor="middle" class="text label-text">第8章</text>
+      <text x="265" y="42" text-anchor="middle" class="text detail-text">データ分析</text>
+      
+      <rect x="370" y="0" width="160" height="60" class="practice-box" />
+      <text x="450" y="25" text-anchor="middle" class="text label-text">第9章</text>
+      <text x="450" y="42" text-anchor="middle" class="text detail-text">実社会応用</text>
+      
+      <rect x="555" y="0" width="125" height="60" class="practice-box" />
+      <text x="617" y="30" text-anchor="middle" class="text detail-text">実践力を</text>
+      <text x="617" y="45" text-anchor="middle" class="text detail-text">獲得</text>
+    </g>
+  </g>
+  
+  <!-- Learning Flow Arrows (left side) -->
+  <g id="learning-flow">
+    <text x="20" y="120" class="text detail-text" transform="rotate(-90, 20, 120)">体験</text>
+    <text x="20" y="280" class="text detail-text" transform="rotate(-90, 20, 280)">理論</text>
+    <text x="20" y="440" class="text detail-text" transform="rotate(-90, 20, 440)">実践</text>
+  </g>
+  
+  <!-- Bottom Summary -->
+  <g transform="translate(0, 520)">
+    <rect x="100" y="20" width="600" height="50" fill="#F9FAFB" stroke="#E5E7EB" stroke-width="1" rx="4" />
+    <text x="400" y="40" text-anchor="middle" class="text label-text" font-weight="600">
+      学習の特徴：ゲーム体験 → 経営理論 → 実社会応用
+    </text>
+    <text x="400" y="58" text-anchor="middle" class="text detail-text">
+      各章で「なぜ？」を考え、段階的に経営スキルを身につけます
+    </text>
+  </g>
+</svg>
