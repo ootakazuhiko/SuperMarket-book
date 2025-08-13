@@ -12,6 +12,10 @@ chapter: chapter01
 
 ---
 
+## ゲーム進行度の目安
+
+![ゲーム進行度チャート](/SuperMarket-book/assets/images/diagrams/game_progress_chart.svg)
+
 ## 1-1　経営って何だろう？
 
 ### スーパーマーケットの店長になったあなた
@@ -231,6 +235,8 @@ Supermarket Simulatorには、現実のスーパーマーケット経営の要�
 
 ### 実社会への応用可能性
 
+![学習成果マップ](/SuperMarket-book/assets/images/diagrams/learning_outcome_map.svg)
+
 この本で学ぶスキルは、将来様々な場面で役立ちます：
 
 **学校生活で**
@@ -298,6 +304,12 @@ Supermarket Simulatorには、現実のスーパーマーケット経営の要�
 - ゲーム学習は安全に失敗でき、即座にフィードバックを得られる
 - Supermarket Simulatorには現実の経営要素が凝縮されている
 - 体験を概念化し、現実に応用することで学習効果が高まる
+
+### 🎮 チャレンジバッジ獲得！
+
+第1章を読み終えたあなたは「経営入門」バッジを獲得しました！
+
+![チャレンジバッジシステム](/SuperMarket-book/assets/images/diagrams/challenge_badge_system.svg)
 
 次の第2章では、店舗設計と顧客導線について、より詳しく学んでいきます。
 

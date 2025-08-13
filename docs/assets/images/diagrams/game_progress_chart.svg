@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+  <title>ゲーム進行度チャート</title>
+  <desc>各章の学習に必要なゲーム経験レベルを示すチャート</desc>
+  
+  <defs>
+    <style>
+      :root {
+        --primary-color: #3B82F6;
+        --success-color: #10B981;
+        --warning-color: #F59E0B;
+        --error-color: #EF4444;
+        --neutral-color: #6B7280;
+        --text-color: #1F2937;
+        --bg-color: #FFFFFF;
+      }
+      
+      .level-beginner {
+        fill: #D1FAE5;
+        stroke: var(--success-color);
+        stroke-width: 2;
+      }
+      
+      .level-intermediate {
+        fill: #FED7AA;
+        stroke: var(--warning-color);
+        stroke-width: 2;
+      }
+      
+      .level-advanced {
+        fill: #FECACA;
+        stroke: var(--error-color);
+        stroke-width: 2;
+      }
+      
+      .progress-bar {
+        fill: #E5E7EB;
+        stroke: #9CA3AF;
+        stroke-width: 1;
+      }
+      
+      .progress-fill-beginner {
+        fill: var(--success-color);
+      }
+      
+      .progress-fill-intermediate {
+        fill: var(--warning-color);
+      }
+      
+      .progress-fill-advanced {
+        fill: var(--error-color);
+      }
+      
+      .chapter-box {
+        fill: white;
+        stroke: #E5E7EB;
+        stroke-width: 1;
+        rx: 4;
+      }
+      
+      .title-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        text-anchor: middle;
+        fill: var(--text-color);
+      }
+      
+      .label-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        fill: var(--text-color);
+      }
+      
+      .detail-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        fill: var(--neutral-color);
+      }
+      
+      .caption-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+        font-size: 10px;
+        font-weight: 400;
+        fill: var(--neutral-color);
+      }
+      
+      .icon-text {
+        font-size: 24px;
+        text-anchor: middle;
+      }
+    </style>
+    
+    <!-- Arrow marker -->
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#6B7280"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#FAFAFA"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" class="title-text">各章で必要なゲーム経験レベル</text>
+  
+  <!-- Legend -->
+  <g transform="translate(200, 80)">
+    <rect x="0" y="0" width="120" height="35" class="level-beginner"/>
+    <text x="60" y="20" class="label-text" text-anchor="middle">初心者</text>
+    <text x="60" y="32" class="caption-text" text-anchor="middle">〜2時間</text>
+    
+    <rect x="140" y="0" width="120" height="35" class="level-intermediate"/>
+    <text x="200" y="20" class="label-text" text-anchor="middle">中級者</text>
+    <text x="200" y="32" class="caption-text" text-anchor="middle">2〜10時間</text>
+    
+    <rect x="280" y="0" width="120" height="35" class="level-advanced"/>
+    <text x="340" y="20" class="label-text" text-anchor="middle">上級者</text>
+    <text x="340" y="32" class="caption-text" text-anchor="middle">10時間〜</text>
+  </g>
+  
+  <!-- Progress axis -->
+  <line x1="100" y1="150" x2="100" y2="520" stroke="#9CA3AF" stroke-width="2"/>
+  <line x1="100" y1="520" x2="700" y2="520" stroke="#9CA3AF" stroke-width="2"/>
+  
+  <!-- Y-axis labels (Chapters) -->
+  <text x="90" y="180" class="detail-text" text-anchor="end">第1章</text>
+  <text x="90" y="220" class="detail-text" text-anchor="end">第2章</text>
+  <text x="90" y="260" class="detail-text" text-anchor="end">第3章</text>
+  <text x="90" y="300" class="detail-text" text-anchor="end">第4章</text>
+  <text x="90" y="340" class="detail-text" text-anchor="end">第5章</text>
+  <text x="90" y="380" class="detail-text" text-anchor="end">第6章</text>
+  <text x="90" y="420" class="detail-text" text-anchor="end">第7章</text>
+  <text x="90" y="460" class="detail-text" text-anchor="end">第8章</text>
+  <text x="90" y="500" class="detail-text" text-anchor="end">第9章</text>
+  
+  <!-- X-axis labels -->
+  <text x="200" y="540" class="detail-text" text-anchor="middle">初心者</text>
+  <text x="400" y="540" class="detail-text" text-anchor="middle">中級者</text>
+  <text x="600" y="540" class="detail-text" text-anchor="middle">上級者</text>
+  
+  <!-- Chapter bars with requirements -->
+  <!-- Chapter 1: Beginner -->
+  <g transform="translate(110, 170)">
+    <rect x="0" y="0" width="150" height="25" class="progress-fill-beginner" rx="4"/>
+    <text x="160" y="15" class="detail-text">経営の基本</text>
+    <text x="15" y="15" class="icon-text" fill="white">🎮</text>
+  </g>
+  
+  <!-- Chapter 2: Beginner -->
+  <g transform="translate(110, 210)">
+    <rect x="0" y="0" width="180" height="25" class="progress-fill-beginner" rx="4"/>
+    <text x="190" y="15" class="detail-text">店舗設計</text>
+    <text x="15" y="15" class="icon-text" fill="white">🏪</text>
+  </g>
+  
+  <!-- Chapter 3: Beginner-Intermediate -->
+  <g transform="translate(110, 250)">
+    <rect x="0" y="0" width="250" height="25" class="progress-fill-beginner" rx="4"/>
+    <rect x="150" y="0" width="100" height="25" class="progress-fill-intermediate" rx="4"/>
+    <text x="260" y="15" class="detail-text">在庫管理</text>
+    <text x="15" y="15" class="icon-text" fill="white">📦</text>
+  </g>
+  
+  <!-- Chapter 4: Intermediate -->
+  <g transform="translate(110, 290)">
+    <rect x="0" y="0" width="320" height="25" class="progress-fill-intermediate" rx="4"/>
+    <text x="330" y="15" class="detail-text">価格戦略</text>
+    <text x="15" y="15" class="icon-text" fill="white">💰</text>
+  </g>
+  
+  <!-- Chapter 5: Intermediate -->
+  <g transform="translate(110, 330)">
+    <rect x="0" y="0" width="350" height="25" class="progress-fill-intermediate" rx="4"/>
+    <text x="360" y="15" class="detail-text">顧客満足度</text>
+    <text x="15" y="15" class="icon-text" fill="white">😊</text>
+  </g>
+  
+  <!-- Chapter 6: Intermediate-Advanced -->
+  <g transform="translate(110, 370)">
+    <rect x="0" y="0" width="420" height="25" class="progress-fill-intermediate" rx="4"/>
+    <rect x="320" y="0" width="100" height="25" class="progress-fill-advanced" rx="4"/>
+    <text x="430" y="15" class="detail-text">成長戦略</text>
+    <text x="15" y="15" class="icon-text" fill="white">📈</text>
+  </g>
+  
+  <!-- Chapter 7: Advanced -->
+  <g transform="translate(110, 410)">
+    <rect x="0" y="0" width="480" height="25" class="progress-fill-advanced" rx="4"/>
+    <text x="490" y="15" class="detail-text">財務管理</text>
+    <text x="15" y="15" class="icon-text" fill="white">💵</text>
+  </g>
+  
+  <!-- Chapter 8: Advanced -->
+  <g transform="translate(110, 450)">
+    <rect x="0" y="0" width="500" height="25" class="progress-fill-advanced" rx="4"/>
+    <text x="510" y="15" class="detail-text">データ分析</text>
+    <text x="15" y="15" class="icon-text" fill="white">📊</text>
+  </g>
+  
+  <!-- Chapter 9: Any level -->
+  <g transform="translate(110, 490)">
+    <rect x="0" y="0" width="480" height="25" fill="url(#gradient)" rx="4"/>
+    <text x="490" y="15" class="detail-text">実社会応用</text>
+    <text x="15" y="15" class="icon-text" fill="white">🌟</text>
+  </g>
+  
+  <!-- Gradient for Chapter 9 -->
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#10B981;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#F59E0B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#EF4444;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Encouragement message -->
+  <rect x="150" y="555" width="500" height="35" fill="#EFF6FF" stroke="#3B82F6" stroke-width="1" rx="4"/>
+  <text x="400" y="575" class="label-text" text-anchor="middle">心配しないで！ゲームを楽しみながら自然にレベルアップできます</text>
+</svg>

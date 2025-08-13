@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+  <title>学習成果マップ</title>
+  <desc>スーパーマーケットシミュレーターで学ぶ経営学で身につく8つのスキルとその応用</desc>
+  
+  <defs>
+    <style>
+      :root {
+        --primary-color: #3B82F6;
+        --success-color: #10B981;
+        --warning-color: #F59E0B;
+        --error-color: #EF4444;
+        --neutral-color: #6B7280;
+        --text-color: #1F2937;
+        --bg-color: #FFFFFF;
+      }
+      
+      .center-circle {
+        fill: var(--primary-color);
+        stroke: #2563EB;
+        stroke-width: 3;
+      }
+      
+      .skill-circle {
+        fill: #F3F4F6;
+        stroke: var(--neutral-color);
+        stroke-width: 2;
+      }
+      
+      .skill-circle-primary {
+        fill: #DBEAFE;
+        stroke: var(--primary-color);
+      }
+      
+      .skill-circle-success {
+        fill: #D1FAE5;
+        stroke: var(--success-color);
+      }
+      
+      .skill-circle-warning {
+        fill: #FED7AA;
+        stroke: var(--warning-color);
+      }
+      
+      .connection-line {
+        stroke: #E5E7EB;
+        stroke-width: 2;
+        fill: none;
+      }
+      
+      .application-box {
+        fill: #FAFAFA;
+        stroke: #E5E7EB;
+        stroke-width: 1;
+        rx: 4;
+      }
+      
+      .title-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        text-anchor: middle;
+        fill: var(--text-color);
+      }
+      
+      .label-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        text-anchor: middle;
+        fill: var(--text-color);
+      }
+      
+      .detail-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        text-anchor: middle;
+        fill: var(--neutral-color);
+      }
+      
+      .caption-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+        font-size: 10px;
+        font-weight: 400;
+        text-anchor: middle;
+        fill: var(--neutral-color);
+      }
+    </style>
+    
+    <!-- Gradient definitions -->
+    <radialGradient id="centerGradient">
+      <stop offset="0%" style="stop-color:#60A5FA;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3B82F6;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#FAFAFA"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" class="title-text">この本で身につく8つのスキル</text>
+  
+  <!-- Connection lines (behind circles) -->
+  <g id="connections">
+    <line x1="400" y1="300" x2="250" y2="150" class="connection-line"/>
+    <line x1="400" y1="300" x2="400" y2="150" class="connection-line"/>
+    <line x1="400" y1="300" x2="550" y2="150" class="connection-line"/>
+    <line x1="400" y1="300" x2="600" y2="300" class="connection-line"/>
+    <line x1="400" y1="300" x2="550" y2="450" class="connection-line"/>
+    <line x1="400" y1="300" x2="400" y2="450" class="connection-line"/>
+    <line x1="400" y1="300" x2="250" y2="450" class="connection-line"/>
+    <line x1="400" y1="300" x2="200" y2="300" class="connection-line"/>
+  </g>
+  
+  <!-- Center: You -->
+  <circle cx="400" cy="300" r="50" fill="url(#centerGradient)" class="center-circle"/>
+  <text x="400" y="300" class="label-text" fill="white" style="font-weight: 600;">あなた</text>
+  <text x="400" y="315" class="caption-text" fill="white">中学1年生</text>
+  
+  <!-- Skill 1: Logical Thinking (Top-left) -->
+  <g transform="translate(250, 150)">
+    <circle cx="0" cy="0" r="45" class="skill-circle skill-circle-primary"/>
+    <text x="0" y="-5" class="label-text">論理的</text>
+    <text x="0" y="10" class="label-text">思考力</text>
+    <rect x="-60" y="-80" width="120" height="40" class="application-box"/>
+    <text x="0" y="-65" class="caption-text">応用例</text>
+    <text x="0" y="-52" class="caption-text">数学の証明問題</text>
+    <text x="0" y="-40" class="caption-text">議論・ディベート</text>
+  </g>
+  
+  <!-- Skill 2: Data Analysis (Top-center) -->
+  <g transform="translate(400, 150)">
+    <circle cx="0" cy="0" r="45" class="skill-circle skill-circle-success"/>
+    <text x="0" y="-5" class="label-text">数値</text>
+    <text x="0" y="10" class="label-text">分析力</text>
+    <rect x="-60" y="-80" width="120" height="40" class="application-box"/>
+    <text x="0" y="-65" class="caption-text">応用例</text>
+    <text x="0" y="-52" class="caption-text">成績分析</text>
+    <text x="0" y="-40" class="caption-text">家計簿管理</text>
+  </g>
+  
+  <!-- Skill 3: Strategic Thinking (Top-right) -->
+  <g transform="translate(550, 150)">
+    <circle cx="0" cy="0" r="45" class="skill-circle skill-circle-warning"/>
+    <text x="0" y="-5" class="label-text">戦略的</text>
+    <text x="0" y="10" class="label-text">思考力</text>
+    <rect x="-60" y="-80" width="120" height="40" class="application-box"/>
+    <text x="0" y="-65" class="caption-text">応用例</text>
+    <text x="0" y="-52" class="caption-text">受験計画</text>
+    <text x="0" y="-40" class="caption-text">部活の作戦</text>
+  </g>
+  
+  <!-- Skill 4: Problem Solving (Right) -->
+  <g transform="translate(600, 300)">
+    <circle cx="0" cy="0" r="45" class="skill-circle skill-circle-primary"/>
+    <text x="0" y="-5" class="label-text">問題</text>
+    <text x="0" y="10" class="label-text">解決力</text>
+    <rect x="65" y="-20" width="100" height="40" class="application-box"/>
+    <text x="115" y="-5" class="caption-text">応用例</text>
+    <text x="115" y="8" class="caption-text">トラブル対応</text>
+  </g>
+  
+  <!-- Skill 5: Communication (Bottom-right) -->
+  <g transform="translate(550, 450)">
+    <circle cx="0" cy="0" r="45" class="skill-circle skill-circle-success"/>
+    <text x="0" y="-5" class="label-text">コミュニ</text>
+    <text x="0" y="10" class="label-text">ケーション</text>
+    <rect x="-60" y="50" width="120" height="40" class="application-box"/>
+    <text x="0" y="65" class="caption-text">応用例</text>
+    <text x="0" y="78" class="caption-text">プレゼン発表</text>
+  </g>
+  
+  <!-- Skill 6: Planning (Bottom-center) -->
+  <g transform="translate(400, 450)">
+    <circle cx="0" cy="0" r="45" class="skill-circle skill-circle-warning"/>
+    <text x="0" y="-5" class="label-text">計画</text>
+    <text x="0" y="10" class="label-text">立案力</text>
+    <rect x="-60" y="50" width="120" height="40" class="application-box"/>
+    <text x="0" y="65" class="caption-text">応用例</text>
+    <text x="0" y="78" class="caption-text">学習スケジュール</text>
+  </g>
+  
+  <!-- Skill 7: Decision Making (Bottom-left) -->
+  <g transform="translate(250, 450)">
+    <circle cx="0" cy="0" r="45" class="skill-circle skill-circle-primary"/>
+    <text x="0" y="-5" class="label-text">意思</text>
+    <text x="0" y="10" class="label-text">決定力</text>
+    <rect x="-60" y="50" width="120" height="40" class="application-box"/>
+    <text x="0" y="65" class="caption-text">応用例</text>
+    <text x="0" y="78" class="caption-text">進路選択</text>
+  </g>
+  
+  <!-- Skill 8: Resource Management (Left) -->
+  <g transform="translate(200, 300)">
+    <circle cx="0" cy="0" r="45" class="skill-circle skill-circle-success"/>
+    <text x="0" y="-5" class="label-text">資源</text>
+    <text x="0" y="10" class="label-text">管理力</text>
+    <rect x="-165" y="-20" width="100" height="40" class="application-box"/>
+    <text x="-115" y="-5" class="caption-text">応用例</text>
+    <text x="-115" y="8" class="caption-text">時間管理</text>
+  </g>
+  
+  <!-- Bottom message -->
+  <rect x="150" y="540" width="500" height="40" fill="#EFF6FF" stroke="#3B82F6" stroke-width="1" rx="4"/>
+  <text x="400" y="560" class="label-text">ゲーム体験を通じて、実社会で役立つスキルを身につけよう！</text>
+</svg>
