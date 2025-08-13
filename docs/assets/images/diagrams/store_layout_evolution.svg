@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+  <title>店舗レイアウトの進化</title>
+  <desc>初心者から上級者まで、段階的に改善される店舗レイアウトの進化を示す図</desc>
+  
+  <defs>
+    <style>
+      :root {
+        --primary-color: #3B82F6;
+        --success-color: #10B981;
+        --warning-color: #F59E0B;
+        --error-color: #EF4444;
+        --neutral-color: #6B7280;
+        --text-color: #1F2937;
+        --bg-color: #FFFFFF;
+      }
+      
+      .store-bg {
+        fill: white;
+        stroke: #E5E7EB;
+        stroke-width: 2;
+        rx: 4;
+      }
+      
+      .shelf {
+        fill: #9CA3AF;
+        stroke: #6B7280;
+        stroke-width: 1;
+      }
+      
+      .shelf-optimized {
+        fill: #60A5FA;
+        stroke: #3B82F6;
+        stroke-width: 1;
+      }
+      
+      .register {
+        fill: #34D399;
+        stroke: #10B981;
+        stroke-width: 2;
+      }
+      
+      .customer-path {
+        stroke: #EF4444;
+        stroke-width: 2;
+        fill: none;
+        stroke-dasharray: 5,3;
+        marker-end: url(#customer-arrow);
+      }
+      
+      .golden-zone {
+        fill: #FEF3C7;
+        stroke: #F59E0B;
+        stroke-width: 2;
+        stroke-dasharray: 4,2;
+        opacity: 0.5;
+      }
+      
+      .level-badge {
+        fill: white;
+        stroke-width: 2;
+        rx: 12;
+      }
+      
+      .level1 {
+        stroke: #10B981;
+      }
+      
+      .level2 {
+        stroke: #F59E0B;
+      }
+      
+      .level3 {
+        stroke: #EF4444;
+      }
+      
+      .title-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        text-anchor: middle;
+        fill: var(--text-color);
+      }
+      
+      .label-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        fill: var(--text-color);
+      }
+      
+      .detail-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        fill: var(--neutral-color);
+      }
+      
+      .caption-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+        font-size: 10px;
+        font-weight: 400;
+        fill: var(--neutral-color);
+      }
+      
+      .metric-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        text-anchor: middle;
+        fill: var(--success-color);
+      }
+    </style>
+    
+    <marker id="customer-arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#EF4444"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#FAFAFA"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" class="title-text">店舗レイアウトの3段階進化</text>
+  
+  <!-- Level 1: Basic Layout -->
+  <g transform="translate(40, 80)">
+    <rect x="0" y="0" width="220" height="200" class="store-bg"/>
+    
+    <!-- Level badge -->
+    <rect x="10" y="10" width="80" height="30" class="level-badge level1"/>
+    <text x="50" y="30" class="label-text" text-anchor="middle">Level 1</text>
+    
+    <!-- Store name -->
+    <text x="110" y="30" class="label-text" text-anchor="middle">基本配置</text>
+    
+    <!-- Shelves (random placement) -->
+    <rect x="30" y="60" width="60" height="15" class="shelf"/>
+    <rect x="100" y="60" width="60" height="15" class="shelf"/>
+    <rect x="30" y="90" width="60" height="15" class="shelf"/>
+    <rect x="100" y="90" width="60" height="15" class="shelf"/>
+    <rect x="30" y="120" width="60" height="15" class="shelf"/>
+    <rect x="100" y="120" width="60" height="15" class="shelf"/>
+    
+    <!-- Register -->
+    <rect x="170" y="150" width="30" height="20" class="register"/>
+    <text x="185" y="163" class="caption-text" text-anchor="middle">レジ</text>
+    
+    <!-- Features -->
+    <text x="110" y="195" class="caption-text" text-anchor="middle">棚とレジだけの最小構成</text>
+    
+    <!-- Metrics -->
+    <rect x="0" y="210" width="220" height="50" fill="#F3F4F6" stroke="#E5E7EB" stroke-width="1"/>
+    <text x="110" y="230" class="detail-text" text-anchor="middle">売上効率: 60%</text>
+    <text x="110" y="245" class="detail-text" text-anchor="middle">顧客満足度: ★★☆☆☆</text>
+  </g>
+  
+  <!-- Level 2: Optimized Flow -->
+  <g transform="translate(290, 80)">
+    <rect x="0" y="0" width="220" height="200" class="store-bg"/>
+    
+    <!-- Level badge -->
+    <rect x="10" y="10" width="80" height="30" class="level-badge level2"/>
+    <text x="50" y="30" class="label-text" text-anchor="middle">Level 2</text>
+    
+    <!-- Store name -->
+    <text x="110" y="30" class="label-text" text-anchor="middle">動線考慮</text>
+    
+    <!-- Shelves (organized with aisles) -->
+    <rect x="20" y="60" width="40" height="15" class="shelf"/>
+    <rect x="70" y="60" width="40" height="15" class="shelf"/>
+    <rect x="120" y="60" width="40" height="15" class="shelf"/>
+    
+    <rect x="20" y="90" width="40" height="15" class="shelf-optimized"/>
+    <rect x="70" y="90" width="40" height="15" class="shelf-optimized"/>
+    <rect x="120" y="90" width="40" height="15" class="shelf-optimized"/>
+    
+    <rect x="20" y="120" width="40" height="15" class="shelf"/>
+    <rect x="70" y="120" width="40" height="15" class="shelf"/>
+    <rect x="120" y="120" width="40" height="15" class="shelf"/>
+    
+    <!-- Customer path -->
+    <path d="M 10,150 L 60,150 L 60,75 L 110,75 L 110,150 L 160,150 L 200,150" class="customer-path"/>
+    
+    <!-- Register -->
+    <rect x="170" y="140" width="30" height="20" class="register"/>
+    <text x="185" y="153" class="caption-text" text-anchor="middle">レジ</text>
+    
+    <!-- Features -->
+    <text x="110" y="195" class="caption-text" text-anchor="middle">通路幅確保・動線設計</text>
+    
+    <!-- Metrics -->
+    <rect x="0" y="210" width="220" height="50" fill="#F3F4F6" stroke="#E5E7EB" stroke-width="1"/>
+    <text x="110" y="230" class="detail-text" text-anchor="middle">売上効率: 80%</text>
+    <text x="110" y="245" class="detail-text" text-anchor="middle">顧客満足度: ★★★☆☆</text>
+  </g>
+  
+  <!-- Level 3: Psychology-based -->
+  <g transform="translate(540, 80)">
+    <rect x="0" y="0" width="220" height="200" class="store-bg"/>
+    
+    <!-- Level badge -->
+    <rect x="10" y="10" width="80" height="30" class="level-badge level3"/>
+    <text x="50" y="30" class="label-text" text-anchor="middle">Level 3</text>
+    
+    <!-- Store name -->
+    <text x="110" y="30" class="label-text" text-anchor="middle">心理活用</text>
+    
+    <!-- Golden zone highlight -->
+    <rect x="60" y="85" width="60" height="25" class="golden-zone"/>
+    
+    <!-- Shelves (strategic placement) -->
+    <rect x="20" y="60" width="40" height="15" class="shelf"/>
+    <rect x="70" y="60" width="40" height="15" class="shelf-optimized"/>
+    <rect x="120" y="60" width="40" height="15" class="shelf"/>
+    
+    <rect x="20" y="90" width="40" height="15" class="shelf-optimized"/>
+    <rect x="70" y="90" width="40" height="15" class="shelf-optimized" stroke="#FFD700" stroke-width="2"/>
+    <rect x="120" y="90" width="40" height="15" class="shelf-optimized"/>
+    
+    <rect x="20" y="120" width="40" height="15" class="shelf"/>
+    <rect x="70" y="120" width="40" height="15" class="shelf-optimized"/>
+    <rect x="120" y="120" width="40" height="15" class="shelf"/>
+    
+    <!-- Customer path (optimized) -->
+    <path d="M 10,150 L 40,150 L 40,75 L 90,75 L 90,105 L 90,75 L 140,75 L 140,150 L 200,150" class="customer-path"/>
+    
+    <!-- Multiple registers -->
+    <rect x="170" y="130" width="30" height="15" class="register"/>
+    <rect x="170" y="150" width="30" height="15" class="register"/>
+    <text x="185" y="140" class="caption-text" text-anchor="middle">レジ</text>
+    <text x="185" y="160" class="caption-text" text-anchor="middle">レジ</text>
+    
+    <!-- Features -->
+    <text x="110" y="195" class="caption-text" text-anchor="middle">ゴールデンゾーン活用</text>
+    
+    <!-- Metrics -->
+    <rect x="0" y="210" width="220" height="50" fill="#F3F4F6" stroke="#E5E7EB" stroke-width="1"/>
+    <text x="110" y="230" class="metric-text">売上効率: 95%</text>
+    <text x="110" y="245" class="detail-text" text-anchor="middle">顧客満足度: ★★★★★</text>
+  </g>
+  
+  <!-- Evolution arrows -->
+  <g>
+    <path d="M 260,180 L 290,180" stroke="#10B981" stroke-width="3" marker-end="url(#customer-arrow)"/>
+    <path d="M 510,180 L 540,180" stroke="#10B981" stroke-width="3" marker-end="url(#customer-arrow)"/>
+  </g>
+  
+  <!-- Key improvements -->
+  <g transform="translate(40, 360)">
+    <rect x="0" y="0" width="720" height="120" fill="white" stroke="#E5E7EB" stroke-width="1" rx="4"/>
+    <text x="360" y="25" class="label-text" text-anchor="middle">各レベルの改善ポイント</text>
+    
+    <!-- Level 1 to 2 -->
+    <g transform="translate(50, 45)">
+      <circle cx="10" cy="10" r="8" fill="#10B981"/>
+      <text x="10" y="15" class="caption-text" text-anchor="middle" fill="white">1→2</text>
+      <text x="30" y="15" class="detail-text" text-anchor="start">通路幅を1.5倍に拡張</text>
+      <text x="30" y="30" class="detail-text" text-anchor="start">商品カテゴリーごとに整理</text>
+      <text x="30" y="45" class="detail-text" text-anchor="start">入口から出口への自然な流れ</text>
+    </g>
+    
+    <!-- Level 2 to 3 -->
+    <g transform="translate(400, 45)">
+      <circle cx="10" cy="10" r="8" fill="#EF4444"/>
+      <text x="10" y="15" class="caption-text" text-anchor="middle" fill="white">2→3</text>
+      <text x="30" y="15" class="detail-text" text-anchor="start">ゴールデンゾーンに売れ筋商品</text>
+      <text x="30" y="30" class="detail-text" text-anchor="start">衝動買いを促す配置</text>
+      <text x="30" y="45" class="detail-text" text-anchor="start">レジ台数を需要に応じて増設</text>
+    </g>
+  </g>
+  
+  <!-- Motivation message -->
+  <rect x="150" y="510" width="500" height="40" fill="#EFF6FF" stroke="#3B82F6" stroke-width="1" rx="4"/>
+  <text x="400" y="530" class="label-text" text-anchor="middle">少しずつ改善していけば、プロ級の店舗が作れる！</text>
+  <text x="400" y="545" class="caption-text" text-anchor="middle">まずはLevel 1から始めて、徐々にレベルアップしよう</text>
+</svg>

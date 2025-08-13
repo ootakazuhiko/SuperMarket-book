@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+  <title>みんなもやってる！よくある失敗TOP5</title>
+  <desc>スーパーマーケット経営でよくある失敗パターンとその改善策</desc>
+  
+  <defs>
+    <style>
+      :root {
+        --primary-color: #3B82F6;
+        --success-color: #10B981;
+        --warning-color: #F59E0B;
+        --error-color: #EF4444;
+        --neutral-color: #6B7280;
+        --text-color: #1F2937;
+        --bg-color: #FFFFFF;
+      }
+      
+      .failure-box {
+        fill: #FEE2E2;
+        stroke: var(--error-color);
+        stroke-width: 2;
+        rx: 8;
+      }
+      
+      .cause-box {
+        fill: #FEF3C7;
+        stroke: var(--warning-color);
+        stroke-width: 2;
+        rx: 8;
+      }
+      
+      .solution-box {
+        fill: #D1FAE5;
+        stroke: var(--success-color);
+        stroke-width: 2;
+        rx: 8;
+      }
+      
+      .rank-circle {
+        fill: var(--primary-color);
+        stroke: #2563EB;
+        stroke-width: 2;
+      }
+      
+      .arrow-line {
+        stroke: var(--neutral-color);
+        stroke-width: 2;
+        marker-end: url(#arrowhead);
+      }
+      
+      .title-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        text-anchor: middle;
+        fill: var(--text-color);
+      }
+      
+      .label-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        fill: var(--text-color);
+      }
+      
+      .detail-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        fill: var(--neutral-color);
+      }
+      
+      .caption-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+        font-size: 10px;
+        font-weight: 400;
+        fill: var(--neutral-color);
+      }
+      
+      .emoji-text {
+        font-size: 24px;
+        text-anchor: middle;
+      }
+    </style>
+    
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="var(--neutral-color)"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#FAFAFA"/>
+  
+  <!-- Title -->
+  <text x="400" y="35" class="title-text" style="font-size: 18px;">みんなもやってる！よくある失敗TOP5</text>
+  <text x="400" y="55" class="detail-text" text-anchor="middle">失敗は成功のもと - 同じ失敗を避けて効率的に上達しよう</text>
+  
+  <!-- Failure Pattern 1 -->
+  <g transform="translate(40, 80)">
+    <circle cx="20" cy="20" r="15" class="rank-circle"/>
+    <text x="20" y="26" class="label-text" text-anchor="middle" fill="white">1</text>
+    
+    <rect x="50" y="5" width="140" height="30" class="failure-box"/>
+    <text x="120" y="25" class="label-text" text-anchor="middle">在庫切れ放置</text>
+    <text x="60" y="25" class="emoji-text">😱</text>
+    
+    <line x1="210" y1="20" x2="240" y2="20" class="arrow-line"/>
+    
+    <rect x="260" y="5" width="140" height="30" class="cause-box"/>
+    <text x="330" y="25" class="detail-text" text-anchor="middle">発注忘れ・需要予測ミス</text>
+    
+    <line x1="420" y1="20" x2="450" y2="20" class="arrow-line"/>
+    
+    <rect x="470" y="5" width="140" height="30" class="solution-box"/>
+    <text x="540" y="25" class="detail-text" text-anchor="middle">在庫アラート設定</text>
+    <text x="595" y="25" class="emoji-text">✅</text>
+  </g>
+  
+  <!-- Failure Pattern 2 -->
+  <g transform="translate(40, 150)">
+    <circle cx="20" cy="20" r="15" class="rank-circle"/>
+    <text x="20" y="26" class="label-text" text-anchor="middle" fill="white">2</text>
+    
+    <rect x="50" y="5" width="140" height="30" class="failure-box"/>
+    <text x="120" y="25" class="label-text" text-anchor="middle">価格設定ミス</text>
+    <text x="60" y="25" class="emoji-text">💸</text>
+    
+    <line x1="210" y1="20" x2="240" y2="20" class="arrow-line"/>
+    
+    <rect x="260" y="5" width="140" height="30" class="cause-box"/>
+    <text x="330" y="25" class="detail-text" text-anchor="middle">競合調査不足</text>
+    
+    <line x1="420" y1="20" x2="450" y2="20" class="arrow-line"/>
+    
+    <rect x="470" y="5" width="140" height="30" class="solution-box"/>
+    <text x="540" y="25" class="detail-text" text-anchor="middle">定期的な価格チェック</text>
+    <text x="595" y="25" class="emoji-text">📊</text>
+  </g>
+  
+  <!-- Failure Pattern 3 -->
+  <g transform="translate(40, 220)">
+    <circle cx="20" cy="20" r="15" class="rank-circle"/>
+    <text x="20" y="26" class="label-text" text-anchor="middle" fill="white">3</text>
+    
+    <rect x="50" y="5" width="140" height="30" class="failure-box"/>
+    <text x="120" y="25" class="label-text" text-anchor="middle">レジ渋滞</text>
+    <text x="60" y="25" class="emoji-text">🚶‍♂️</text>
+    
+    <line x1="210" y1="20" x2="240" y2="20" class="arrow-line"/>
+    
+    <rect x="260" y="5" width="140" height="30" class="cause-box"/>
+    <text x="330" y="25" class="detail-text" text-anchor="middle">レジ台数不足</text>
+    
+    <line x1="420" y1="20" x2="450" y2="20" class="arrow-line"/>
+    
+    <rect x="470" y="5" width="140" height="30" class="solution-box"/>
+    <text x="540" y="25" class="detail-text" text-anchor="middle">ピーク時間帯に増設</text>
+    <text x="595" y="25" class="emoji-text">⚡</text>
+  </g>
+  
+  <!-- Failure Pattern 4 -->
+  <g transform="translate(40, 290)">
+    <circle cx="20" cy="20" r="15" class="rank-circle"/>
+    <text x="20" y="26" class="label-text" text-anchor="middle" fill="white">4</text>
+    
+    <rect x="50" y="5" width="140" height="30" class="failure-box"/>
+    <text x="120" y="25" class="label-text" text-anchor="middle">借金地獄</text>
+    <text x="60" y="25" class="emoji-text">😰</text>
+    
+    <line x1="210" y1="20" x2="240" y2="20" class="arrow-line"/>
+    
+    <rect x="260" y="5" width="140" height="30" class="cause-box"/>
+    <text x="330" y="25" class="detail-text" text-anchor="middle">無計画な拡張</text>
+    
+    <line x1="420" y1="20" x2="450" y2="20" class="arrow-line"/>
+    
+    <rect x="470" y="5" width="140" height="30" class="solution-box"/>
+    <text x="540" y="25" class="detail-text" text-anchor="middle">段階的な投資計画</text>
+    <text x="595" y="25" class="emoji-text">📈</text>
+  </g>
+  
+  <!-- Failure Pattern 5 -->
+  <g transform="translate(40, 360)">
+    <circle cx="20" cy="20" r="15" class="rank-circle"/>
+    <text x="20" y="26" class="label-text" text-anchor="middle" fill="white">5</text>
+    
+    <rect x="50" y="5" width="140" height="30" class="failure-box"/>
+    <text x="120" y="25" class="label-text" text-anchor="middle">商品配置混乱</text>
+    <text x="60" y="25" class="emoji-text">🔀</text>
+    
+    <line x1="210" y1="20" x2="240" y2="20" class="arrow-line"/>
+    
+    <rect x="260" y="5" width="140" height="30" class="cause-box"/>
+    <text x="330" y="25" class="detail-text" text-anchor="middle">カテゴリー無視</text>
+    
+    <line x1="420" y1="20" x2="450" y2="20" class="arrow-line"/>
+    
+    <rect x="470" y="5" width="140" height="30" class="solution-box"/>
+    <text x="540" y="25" class="detail-text" text-anchor="middle">関連商品をまとめる</text>
+    <text x="595" y="25" class="emoji-text">🗂️</text>
+  </g>
+  
+  <!-- Success tips box -->
+  <g transform="translate(40, 430)">
+    <rect x="0" y="0" width="720" height="120" fill="white" stroke="#E5E7EB" stroke-width="1" rx="8"/>
+    <text x="360" y="25" class="label-text" text-anchor="middle">失敗を避けるための3つの心構え</text>
+    
+    <g transform="translate(60, 45)">
+      <circle cx="10" cy="10" r="8" fill="#10B981"/>
+      <text x="10" y="15" class="caption-text" text-anchor="middle" fill="white">1</text>
+      <text x="30" y="15" class="detail-text" text-anchor="start">データを見る習慣をつける（売上、在庫、顧客数）</text>
+    </g>
+    
+    <g transform="translate(60, 70)">
+      <circle cx="10" cy="10" r="8" fill="#F59E0B"/>
+      <text x="10" y="15" class="caption-text" text-anchor="middle" fill="white">2</text>
+      <text x="30" y="15" class="detail-text" text-anchor="start">小さく試して、うまくいったら拡大する</text>
+    </g>
+    
+    <g transform="translate(60, 95)">
+      <circle cx="10" cy="10" r="8" fill="#3B82F6"/>
+      <text x="10" y="15" class="caption-text" text-anchor="middle" fill="white">3</text>
+      <text x="30" y="15" class="detail-text" text-anchor="start">失敗しても落ち込まない！次に活かせば成長できる</text>
+    </g>
+  </g>
+  
+  <!-- Encouragement message -->
+  <rect x="150" y="565" width="500" height="30" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1" rx="4"/>
+  <text x="400" y="583" class="label-text" text-anchor="middle">💪 失敗は恥ずかしくない！プロも通ってきた道です</text>
+</svg>

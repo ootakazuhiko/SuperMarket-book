@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+  <title>価格設定の意思決定フローチャート</title>
+  <desc>商品の価格を決めるための思考プロセスを段階的に示したフローチャート</desc>
+  
+  <defs>
+    <style>
+      :root {
+        --primary-color: #3B82F6;
+        --success-color: #10B981;
+        --warning-color: #F59E0B;
+        --error-color: #EF4444;
+        --neutral-color: #6B7280;
+        --text-color: #1F2937;
+        --bg-color: #FFFFFF;
+      }
+      
+      .start-end-box {
+        fill: #DBEAFE;
+        stroke: var(--primary-color);
+        stroke-width: 2;
+        rx: 20;
+        ry: 20;
+      }
+      
+      .process-box {
+        fill: #F3F4F6;
+        stroke: var(--neutral-color);
+        stroke-width: 2;
+        rx: 4;
+      }
+      
+      .decision-box {
+        fill: #FEF3C7;
+        stroke: var(--warning-color);
+        stroke-width: 2;
+      }
+      
+      .success-box {
+        fill: #D1FAE5;
+        stroke: var(--success-color);
+        stroke-width: 2;
+        rx: 4;
+      }
+      
+      .error-box {
+        fill: #FEE2E2;
+        stroke: var(--error-color);
+        stroke-width: 2;
+        rx: 4;
+      }
+      
+      .flow-line {
+        stroke: var(--neutral-color);
+        stroke-width: 2;
+        fill: none;
+        marker-end: url(#arrowhead);
+      }
+      
+      .yes-line {
+        stroke: var(--success-color);
+        stroke-width: 2;
+        fill: none;
+        marker-end: url(#arrowhead-yes);
+      }
+      
+      .no-line {
+        stroke: var(--error-color);
+        stroke-width: 2;
+        fill: none;
+        marker-end: url(#arrowhead-no);
+      }
+      
+      .title-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        text-anchor: middle;
+        fill: var(--text-color);
+      }
+      
+      .label-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        text-anchor: middle;
+        fill: var(--text-color);
+      }
+      
+      .detail-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        text-anchor: middle;
+        fill: var(--neutral-color);
+      }
+      
+      .caption-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+        font-size: 10px;
+        font-weight: 400;
+        text-anchor: middle;
+        fill: var(--neutral-color);
+      }
+    </style>
+    
+    <!-- Arrow markers -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="var(--neutral-color)"/>
+    </marker>
+    <marker id="arrowhead-yes" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="var(--success-color)"/>
+    </marker>
+    <marker id="arrowhead-no" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="var(--error-color)"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#FAFAFA"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" class="title-text">価格設定の意思決定フロー</text>
+  
+  <!-- START -->
+  <g transform="translate(400, 80)">
+    <ellipse cx="0" cy="0" rx="60" ry="25" class="start-end-box"/>
+    <text x="0" y="5" class="label-text">START</text>
+  </g>
+  
+  <!-- Step 1: Select Product -->
+  <g transform="translate(400, 140)">
+    <rect x="-80" y="-20" width="160" height="40" class="process-box"/>
+    <text x="0" y="0" class="label-text">商品を選択</text>
+    <text x="0" y="15" class="caption-text">販売する商品を決める</text>
+  </g>
+  
+  <!-- Arrow -->
+  <line x1="400" y1="105" x2="400" y2="120" class="flow-line"/>
+  
+  <!-- Step 2: Check Competitors -->
+  <g transform="translate(400, 210)">
+    <rect x="-80" y="-20" width="160" height="40" class="process-box"/>
+    <text x="0" y="0" class="label-text">競合価格を調査</text>
+    <text x="0" y="15" class="caption-text">他店の価格を確認</text>
+  </g>
+  
+  <!-- Arrow -->
+  <line x1="400" y1="160" x2="400" y2="190" class="flow-line"/>
+  
+  <!-- Decision 1: Is price competitive? -->
+  <g transform="translate(400, 290)">
+    <polygon points="0,-35 70,0 0,35 -70,0" class="decision-box"/>
+    <text x="0" y="-5" class="label-text">競合より</text>
+    <text x="0" y="10" class="label-text">安くできる？</text>
+  </g>
+  
+  <!-- Arrow -->
+  <line x1="400" y1="230" x2="400" y2="255" class="flow-line"/>
+  
+  <!-- YES path -->
+  <g transform="translate(250, 370)">
+    <rect x="-70" y="-20" width="140" height="40" class="success-box"/>
+    <text x="0" y="0" class="label-text">低価格戦略</text>
+    <text x="0" y="15" class="caption-text">薄利多売を狙う</text>
+  </g>
+  
+  <!-- NO path -->
+  <g transform="translate(550, 370)">
+    <rect x="-70" y="-20" width="140" height="40" class="process-box"/>
+    <text x="0" y="0" class="label-text">付加価値を検討</text>
+    <text x="0" y="15" class="caption-text">サービス・品質で差別化</text>
+  </g>
+  
+  <!-- Arrows from decision -->
+  <line x1="330" y1="290" x2="250" y2="350" class="yes-line"/>
+  <text x="280" y="315" class="detail-text" fill="var(--success-color)">YES</text>
+  
+  <line x1="470" y1="290" x2="550" y2="350" class="no-line"/>
+  <text x="515" y="315" class="detail-text" fill="var(--error-color)">NO</text>
+  
+  <!-- Decision 2: Calculate profit -->
+  <g transform="translate(400, 450)">
+    <polygon points="0,-35 70,0 0,35 -70,0" class="decision-box"/>
+    <text x="0" y="-5" class="label-text">利益率は</text>
+    <text x="0" y="10" class="label-text">適切？</text>
+  </g>
+  
+  <!-- Arrows to decision 2 -->
+  <line x1="250" y1="390" x2="350" y2="430" class="flow-line"/>
+  <line x1="550" y1="390" x2="450" y2="430" class="flow-line"/>
+  
+  <!-- Final decision paths -->
+  <g transform="translate(250, 520)">
+    <rect x="-60" y="-15" width="120" height="30" class="error-box"/>
+    <text x="0" y="5" class="label-text">価格再検討</text>
+  </g>
+  
+  <g transform="translate(550, 520)">
+    <rect x="-60" y="-15" width="120" height="30" class="success-box"/>
+    <text x="0" y="5" class="label-text">価格決定！</text>
+  </g>
+  
+  <!-- Arrows from decision 2 -->
+  <line x1="350" y1="470" x2="290" y2="505" class="no-line"/>
+  <text x="310" y="485" class="detail-text" fill="var(--error-color)">NO</text>
+  
+  <line x1="450" y1="470" x2="510" y2="505" class="yes-line"/>
+  <text x="485" y="485" class="detail-text" fill="var(--success-color)">YES</text>
+  
+  <!-- END -->
+  <g transform="translate(550, 570)">
+    <ellipse cx="0" cy="0" rx="60" ry="25" class="start-end-box"/>
+    <text x="0" y="5" class="label-text">END</text>
+  </g>
+  
+  <!-- Arrow to END -->
+  <line x1="550" y1="535" x2="550" y2="545" class="flow-line"/>
+  
+  <!-- Loop back arrow -->
+  <path d="M 250,505 Q 100,400 100,290 Q 100,180 320,140" class="flow-line" stroke-dasharray="5,5"/>
+  
+  <!-- Tips box -->
+  <rect x="50" y="80" width="180" height="80" fill="white" stroke="#E5E7EB" stroke-width="1" rx="4"/>
+  <text x="140" y="100" class="label-text">💡 ポイント</text>
+  <text x="60" y="120" class="caption-text" text-anchor="start">1. 競合を必ず調査</text>
+  <text x="60" y="135" class="caption-text" text-anchor="start">2. 利益率を計算</text>
+  <text x="60" y="150" class="caption-text" text-anchor="start">3. 何度でも見直しOK</text>
+</svg>

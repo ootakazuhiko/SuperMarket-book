@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+  <title>投資と成長の3つのパターン</title>
+  <desc>店舗成長における投資戦略の違いによる3つの成長パターンを示すグラフ</desc>
+  
+  <defs>
+    <style>
+      :root {
+        --primary-color: #3B82F6;
+        --success-color: #10B981;
+        --warning-color: #F59E0B;
+        --error-color: #EF4444;
+        --neutral-color: #6B7280;
+        --text-color: #1F2937;
+        --bg-color: #FFFFFF;
+      }
+      
+      .axis-line {
+        stroke: var(--neutral-color);
+        stroke-width: 2;
+      }
+      
+      .grid-line {
+        stroke: #E5E7EB;
+        stroke-width: 1;
+        stroke-dasharray: 2,2;
+      }
+      
+      .growth-aggressive {
+        stroke: var(--error-color);
+        stroke-width: 3;
+        fill: none;
+      }
+      
+      .growth-stable {
+        stroke: var(--success-color);
+        stroke-width: 3;
+        fill: none;
+      }
+      
+      .growth-stagnant {
+        stroke: var(--warning-color);
+        stroke-width: 3;
+        fill: none;
+      }
+      
+      .investment-point {
+        fill: white;
+        stroke-width: 2;
+      }
+      
+      .title-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        text-anchor: middle;
+        fill: var(--text-color);
+      }
+      
+      .label-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        fill: var(--text-color);
+      }
+      
+      .detail-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        fill: var(--neutral-color);
+      }
+      
+      .caption-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+        font-size: 10px;
+        font-weight: 400;
+        fill: var(--neutral-color);
+      }
+      
+      .annotation-box {
+        fill: white;
+        stroke: #E5E7EB;
+        stroke-width: 1;
+        rx: 4;
+      }
+    </style>
+    
+    <!-- Arrow marker -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="var(--neutral-color)"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#FAFAFA"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" class="title-text">投資戦略による成長パターンの違い</text>
+  
+  <!-- Graph area -->
+  <g transform="translate(100, 80)">
+    <!-- Grid lines -->
+    <line x1="0" y1="50" x2="600" y2="50" class="grid-line"/>
+    <line x1="0" y1="100" x2="600" y2="100" class="grid-line"/>
+    <line x1="0" y1="150" x2="600" y2="150" class="grid-line"/>
+    <line x1="0" y1="200" x2="600" y2="200" class="grid-line"/>
+    <line x1="0" y1="250" x2="600" y2="250" class="grid-line"/>
+    <line x1="0" y1="300" x2="600" y2="300" class="grid-line"/>
+    
+    <line x1="100" y1="0" x2="100" y2="350" class="grid-line"/>
+    <line x1="200" y1="0" x2="200" y2="350" class="grid-line"/>
+    <line x1="300" y1="0" x2="300" y2="350" class="grid-line"/>
+    <line x1="400" y1="0" x2="400" y2="350" class="grid-line"/>
+    <line x1="500" y1="0" x2="500" y2="350" class="grid-line"/>
+    
+    <!-- Axes -->
+    <line x1="0" y1="350" x2="600" y2="350" class="axis-line" marker-end="url(#arrowhead)"/>
+    <line x1="0" y1="350" x2="0" y2="0" class="axis-line" marker-end="url(#arrowhead)"/>
+    
+    <!-- Y-axis labels (Sales) -->
+    <text x="-20" y="355" class="detail-text" text-anchor="end">0</text>
+    <text x="-20" y="305" class="detail-text" text-anchor="end">100万</text>
+    <text x="-20" y="255" class="detail-text" text-anchor="end">200万</text>
+    <text x="-20" y="205" class="detail-text" text-anchor="end">300万</text>
+    <text x="-20" y="155" class="detail-text" text-anchor="end">400万</text>
+    <text x="-20" y="105" class="detail-text" text-anchor="end">500万</text>
+    <text x="-20" y="55" class="detail-text" text-anchor="end">600万</text>
+    <text x="-20" y="5" class="detail-text" text-anchor="end">700万</text>
+    
+    <!-- X-axis labels (Months) -->
+    <text x="0" y="375" class="detail-text" text-anchor="middle">0</text>
+    <text x="100" y="375" class="detail-text" text-anchor="middle">2ヶ月</text>
+    <text x="200" y="375" class="detail-text" text-anchor="middle">4ヶ月</text>
+    <text x="300" y="375" class="detail-text" text-anchor="middle">6ヶ月</text>
+    <text x="400" y="375" class="detail-text" text-anchor="middle">8ヶ月</text>
+    <text x="500" y="375" class="detail-text" text-anchor="middle">10ヶ月</text>
+    <text x="600" y="375" class="detail-text" text-anchor="middle">12ヶ月</text>
+    
+    <!-- Axis labels -->
+    <text x="300" y="410" class="label-text" text-anchor="middle">時間経過</text>
+    <text x="-60" y="175" class="label-text" text-anchor="middle" transform="rotate(-90 -60 175)">売上高</text>
+    
+    <!-- Growth curves -->
+    <!-- Aggressive growth (red) -->
+    <path d="M 0,340 Q 50,330 100,300 T 200,220 Q 250,160 300,100 T 400,40 Q 450,20 500,10 T 600,5" 
+          class="growth-aggressive"/>
+    
+    <!-- Investment points for aggressive -->
+    <circle cx="100" cy="300" r="5" class="investment-point" stroke="var(--error-color)"/>
+    <circle cx="200" cy="220" r="5" class="investment-point" stroke="var(--error-color)"/>
+    <circle cx="300" cy="100" r="5" class="investment-point" stroke="var(--error-color)"/>
+    <circle cx="400" cy="40" r="5" class="investment-point" stroke="var(--error-color)"/>
+    
+    <!-- Stable growth (green) -->
+    <path d="M 0,340 L 100,310 L 200,270 L 300,220 L 400,160 L 500,90 L 600,20" 
+          class="growth-stable"/>
+    
+    <!-- Investment points for stable -->
+    <circle cx="150" cy="290" r="5" class="investment-point" stroke="var(--success-color)"/>
+    <circle cx="300" cy="220" r="5" class="investment-point" stroke="var(--success-color)"/>
+    <circle cx="450" cy="125" r="5" class="investment-point" stroke="var(--success-color)"/>
+    
+    <!-- Stagnant growth (yellow) -->
+    <path d="M 0,340 L 100,320 L 200,290 L 300,260 L 400,240 L 500,230 L 600,225" 
+          class="growth-stagnant"/>
+    
+    <!-- Investment point for stagnant -->
+    <circle cx="200" cy="290" r="5" class="investment-point" stroke="var(--warning-color)"/>
+  </g>
+  
+  <!-- Legend and explanations -->
+  <g transform="translate(50, 480)">
+    <!-- Aggressive -->
+    <rect x="0" y="0" width="220" height="80" class="annotation-box"/>
+    <line x1="10" y1="20" x2="40" y2="20" class="growth-aggressive"/>
+    <circle cx="25" cy="20" r="4" class="investment-point" stroke="var(--error-color)"/>
+    <text x="50" y="25" class="label-text">急成長型</text>
+    <text x="10" y="45" class="caption-text">特徴: 積極的な投資で急速拡大</text>
+    <text x="10" y="58" class="caption-text">リスク: 高い（資金ショート危険）</text>
+    <text x="10" y="71" class="caption-text">適性: リスク許容度が高い人</text>
+    
+    <!-- Stable -->
+    <rect x="240" y="0" width="220" height="80" class="annotation-box"/>
+    <line x1="250" y1="20" x2="280" y2="20" class="growth-stable"/>
+    <circle cx="265" cy="20" r="4" class="investment-point" stroke="var(--success-color)"/>
+    <text x="290" y="25" class="label-text">安定成長型</text>
+    <text x="250" y="45" class="caption-text">特徴: 計画的な投資で着実成長</text>
+    <text x="250" y="58" class="caption-text">リスク: 中程度（バランス型）</text>
+    <text x="250" y="71" class="caption-text">適性: 初心者におすすめ</text>
+    
+    <!-- Stagnant -->
+    <rect x="480" y="0" width="220" height="80" class="annotation-box"/>
+    <line x1="490" y1="20" x2="520" y2="20" class="growth-stagnant"/>
+    <circle cx="505" cy="20" r="4" class="investment-point" stroke="var(--warning-color)"/>
+    <text x="530" y="25" class="label-text">停滞型</text>
+    <text x="490" y="45" class="caption-text">特徴: 投資控えめで成長鈍化</text>
+    <text x="490" y="58" class="caption-text">リスク: 低い（機会損失大）</text>
+    <text x="490" y="71" class="caption-text">適性: 慎重すぎると陥りやすい</text>
+  </g>
+  
+  <!-- Key insights box -->
+  <rect x="150" y="570" width="500" height="25" fill="#EFF6FF" stroke="#3B82F6" stroke-width="1" rx="4"/>
+  <text x="400" y="587" class="label-text" text-anchor="middle">💡 ポイント: 投資のタイミングと金額が成長速度を決める！</text>
+</svg>
