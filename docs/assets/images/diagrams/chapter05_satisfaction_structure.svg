@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
   <title>顧客満足度の基本構造</title>
   <desc>満足度 = 実際の体験 - 期待値という基本構造を示した図</desc>
   
@@ -10,49 +10,45 @@
         fill: #f3e5f5;
         stroke: #9c27b0;
         stroke-width: 2;
-        rx: 12;
       }
       .expectation-box {
         fill: #e8eaf6;
         stroke: #3f51b5;
         stroke-width: 2;
-        rx: 8;
       }
       .experience-box {
         fill: #e0f2f1;
         stroke: #009688;
         stroke-width: 2;
-        rx: 8;
       }
       .result-box {
         fill: #fff3e0;
         stroke: #ff9800;
         stroke-width: 2;
-        rx: 8;
       }
       .text-main {
-        font-family: Inter, 'Helvetica Neue', Arial, sans-serif;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
         font-size: 16px;
         font-weight: 600;
         text-anchor: middle;
         fill: #333;
       }
       .text-secondary {
-        font-family: Inter, 'Helvetica Neue', Arial, sans-serif;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
         font-size: 14px;
         font-weight: 400;
         text-anchor: middle;
         fill: #666;
       }
       .text-formula {
-        font-family: Inter, 'Helvetica Neue', Arial, sans-serif;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
         font-size: 18px;
         font-weight: 600;
         text-anchor: middle;
         fill: #333;
       }
       .text-symbol {
-        font-family: Inter, 'Helvetica Neue', Arial, sans-serif;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
         font-size: 24px;
         font-weight: 600;
         text-anchor: middle;
@@ -62,50 +58,54 @@
   </defs>
   
   <!-- Background -->
-  <rect width="800" height="400" fill="#fafafa" stroke="#e0e0e0"/>
+  <rect width="800" height="400" fill="#fafafa" stroke="#e0e0e0" stroke-width="1"/>
   
   <!-- Title -->
   <text x="400" y="30" class="text-main" style="font-size: 20px;">顧客満足度の基本構造</text>
   
   <!-- Main formula box -->
-  <rect x="100" y="60" width="600" height="60" class="formula-box"/>
+  <rect x="100" y="60" width="600" height="60" rx="12" ry="12" class="formula-box"/>
   <text x="400" y="95" class="text-formula">満足度 = 実際の体験 - 期待値</text>
   
   <!-- Components -->
   <!-- Expectation -->
-  <rect x="50" y="160" width="200" height="100" class="expectation-box"/>
-  <text x="150" y="185" class="text-main">期待値</text>
-  <text x="150" y="205" class="text-secondary">お客様が事前に</text>
-  <text x="150" y="220" class="text-secondary">期待していること</text>
-  <text x="150" y="240" class="text-secondary">・価格・品質・サービス</text>
+  <rect x="50" y="160" width="200" height="100" rx="8" ry="8" class="expectation-box"/>
+  <text x="150" y="190" class="text-main">期待値</text>
+  <text x="150" y="215" class="text-secondary">お客様が事前に</text>
+  <text x="150" y="232" class="text-secondary">期待していること</text>
+  <text x="150" y="249" class="text-secondary" style="font-size: 12px;">価格・品質・サービス</text>
   
   <!-- Minus symbol -->
-  <text x="300" y="220" class="text-symbol">-</text>
+  <text x="300" y="220" class="text-symbol">－</text>
   
   <!-- Experience -->
-  <rect x="350" y="160" width="200" height="100" class="experience-box"/>
-  <text x="450" y="185" class="text-main">実際の体験</text>
-  <text x="450" y="205" class="text-secondary">お客様が実際に</text>
-  <text x="450" y="220" class="text-secondary">経験したこと</text>
-  <text x="450" y="240" class="text-secondary">・商品・接客・環境</text>
+  <rect x="350" y="160" width="200" height="100" rx="8" ry="8" class="experience-box"/>
+  <text x="450" y="190" class="text-main">実際の体験</text>
+  <text x="450" y="215" class="text-secondary">お客様が実際に</text>
+  <text x="450" y="232" class="text-secondary">経験したこと</text>
+  <text x="450" y="249" class="text-secondary" style="font-size: 12px;">商品・接客・環境</text>
   
   <!-- Equals symbol -->
-  <text x="600" y="220" class="text-symbol">=</text>
+  <text x="600" y="220" class="text-symbol">＝</text>
   
   <!-- Results -->
-  <rect x="100" y="300" width="150" height="80" class="result-box"/>
-  <text x="175" y="325" class="text-main">満足</text>
-  <text x="175" y="340" class="text-secondary">体験 > 期待</text>
-  <text x="175" y="355" class="text-secondary">期待を上回る</text>
-  
-  <rect x="325" y="300" width="150" height="80" class="result-box"/>
-  <text x="400" y="325" class="text-main">普通</text>
-  <text x="400" y="340" class="text-secondary">体験 = 期待</text>
-  <text x="400" y="355" class="text-secondary">期待通り</text>
-  
-  <rect x="550" y="300" width="150" height="80" class="result-box"/>
-  <text x="625" y="325" class="text-main">不満</text>
-  <text x="625" y="340" class="text-secondary">体験 < 期待</text>
-  <text x="625" y="355" class="text-secondary">期待を下回る</text>
-  
+  <g transform="translate(0, 300)">
+    <!-- 満足 -->
+    <rect x="100" y="0" width="150" height="80" rx="8" ry="8" class="result-box" style="fill: #e8f5e9;"/>
+    <text x="175" y="25" class="text-main" style="fill: #2e7d32;">満足</text>
+    <text x="175" y="45" class="text-secondary">体験 ＞ 期待</text>
+    <text x="175" y="62" class="text-secondary" style="font-size: 12px;">期待を上回る</text>
+    
+    <!-- 普通 -->
+    <rect x="325" y="0" width="150" height="80" rx="8" ry="8" class="result-box"/>
+    <text x="400" y="25" class="text-main">普通</text>
+    <text x="400" y="45" class="text-secondary">体験 ＝ 期待</text>
+    <text x="400" y="62" class="text-secondary" style="font-size: 12px;">期待通り</text>
+    
+    <!-- 不満 -->
+    <rect x="550" y="0" width="150" height="80" rx="8" ry="8" class="result-box" style="fill: #ffebee;"/>
+    <text x="625" y="25" class="text-main" style="fill: #c62828;">不満</text>
+    <text x="625" y="45" class="text-secondary">体験 ＜ 期待</text>
+    <text x="625" y="62" class="text-secondary" style="font-size: 12px;">期待を下回る</text>
+  </g>
 </svg>
