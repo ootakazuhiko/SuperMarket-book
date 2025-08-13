@@ -88,9 +88,9 @@ Supermarket Simulatorを初めて起動したとき、何を感じましたか�
 
 ゲームの素晴らしい点は、行動の結果がすぐに分かることです。
 
-![価格設定による売上への影響フロー](../../assets/images/diagrams/chapter01_price_flow.svg)
+![価格設定による売上への影響フロー](/SuperMarket-book/assets/images/diagrams/chapter01_price_flow.svg)
 
-![レジ増設による顧客満足度向上フロー](../../assets/images/diagrams/chapter01_customer_service_flow.svg)
+![レジ増設による顧客満足度向上フロー](/SuperMarket-book/assets/images/diagrams/chapter01_customer_service_flow.svg)
 
 現実のビジネスでは、施策の効果が分かるまで数ヶ月かかることもありますが、ゲームなら数分で結果が見えます。
 

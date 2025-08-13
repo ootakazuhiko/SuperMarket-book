@@ -116,7 +116,7 @@ chapter: chapter09
 
 **問題を要素に分解して考える**
 
-![構造化思考プロセス](../../assets/images/diagrams/chapter09_structured_thinking.svg)
+![構造化思考プロセス](/SuperMarket-book/assets/images/diagrams/chapter09_structured_thinking.svg)
 
 **3C分析の応用**
 ```

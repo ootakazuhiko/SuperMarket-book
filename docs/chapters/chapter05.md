@@ -32,7 +32,7 @@ Supermarket Simulatorでレジ対応をしているとき、こんなことを�
 
 **期待値 vs 実際の体験**
 
-![顧客満足度の基本構造](../../assets/images/diagrams/chapter05_satisfaction_structure.svg)
+![顧客満足度の基本構造](/SuperMarket-book/assets/images/diagrams/chapter05_satisfaction_structure.svg)
 
 **ゲーム体験での例**
 ```

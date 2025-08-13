@@ -1038,7 +1038,7 @@ CO2排出量の削減
 
 **PDCAサイクル**は、継続的改善のための基本的なフレームワークです。
 
-![PDCAサイクル](../../assets/images/diagrams/chapter08_pdca_cycle.svg)
+![PDCAサイクル](/SuperMarket-book/assets/images/diagrams/chapter08_pdca_cycle.svg)
 
 #### PDCAサイクルの詳細
 

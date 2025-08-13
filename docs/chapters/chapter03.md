@@ -454,7 +454,7 @@ Supermarket Simulatorをプレイしていて、こんな経験はありませ�
 
 #### 発注点管理の流れ
 
-![発注点管理システムのフロー](../../assets/images/diagrams/chapter03_inventory_flow.svg)
+![発注点管理システムのフロー](/SuperMarket-book/assets/images/diagrams/chapter03_inventory_flow.svg)
 
 #### 経済的発注量（EOQ）
 

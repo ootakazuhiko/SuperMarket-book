@@ -453,7 +453,7 @@ IKEA（イケア）は、独特な店舗設計で有名です。
 
 **改善のサイクル**:
 
-![継続的改善サイクル](../../assets/images/diagrams/chapter02_improvement_cycle.svg)
+![継続的改善サイクル](/SuperMarket-book/assets/images/diagrams/chapter02_improvement_cycle.svg)
 
 ### A/Bテストの考え方
 
