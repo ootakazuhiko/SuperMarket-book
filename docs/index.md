@@ -7,6 +7,10 @@ title: ホーム
 
 ゲームで学ぶビジネスの基本
 
+<div style="text-align: center; margin: 2em 0;">
+  <img src="{{ '/cover.png' | relative_url }}" alt="スーパーマーケットシミュレーターから学ぶ経営学入門 表紙" style="max-width: 400px; width: 100%; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+</div>
+
 ## 概要
 
 人気ゲーム「Supermarket Simulator」を題材に、中学生でも理解できる経営学の基本を学ぶ実践的な入門書。店舗設計、在庫管理、価格戦略、財務管理まで、ゲームプレイを通じて本格的なビジネス知識を習得。
