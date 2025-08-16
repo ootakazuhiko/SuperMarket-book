@@ -1,3 +1,10 @@
+<!-- 
+本章は「スーパーマーケットシミュレーターから学ぶ経営学入門」の一部であり、
+CC BY-NC-SA 4.0ライセンスの下で提供されます。
+商用利用は事前許諾が必要です。
+詳細：../LICENSE.md
+-->
+
 ---
 layout: book
 title: "第1章　ゲームで学ぶ経営の基本"
@@ -312,4 +319,3 @@ Supermarket Simulatorには、現実のスーパーマーケット経営の要�
 ![チャレンジバッジシステム](/SuperMarket-book/assets/images/diagrams/challenge_badge_system.svg)
 
 次の第2章では、店舗設計と顧客導線について、より詳しく学んでいきます。
-
