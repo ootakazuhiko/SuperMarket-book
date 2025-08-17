@@ -7,11 +7,11 @@ CC BY-NC-SA 4.0ライセンスの下で提供されます。
 
 ---
 layout: book
-title: "付録B　計算式一覧"
+title: "付録A　計算式一覧"
 chapter: appendix-a
 ---
 
-# 付録B　計算式一覧
+# 付録A　計算式一覧
 
 
 
