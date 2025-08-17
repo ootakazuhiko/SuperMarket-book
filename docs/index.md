@@ -44,9 +44,13 @@ title: ホーム
 
 - Email: [ootakazuhiko@gmail.com](mailto:ootakazuhiko@gmail.com)
 
-## ライセンス
+---
 
-MIT
+## 📄 ライセンス
+
+本書はCreative Commons BY-NC-SA 4.0ライセンスで公開されています。
+
+🔓 教育・研究・個人学習での利用は自由ですが、💼 商用利用には事前許諾が必要です。[詳細なライセンス条件](https://github.com/ootakazuhiko/SuperMarket-book/blob/main/LICENSE.md)
 
 ---
 
