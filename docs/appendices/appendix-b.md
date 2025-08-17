@@ -7,11 +7,11 @@ CC BY-NC-SA 4.0ライセンスの下で提供されます。
 
 ---
 layout: book
-title: "付録A　用語集"
+title: "付録B　用語集"
 chapter: appendix-b
 ---
 
-# 付録A　用語集
+# 付録B　用語集
 
 
 
